@@ -1,0 +1,32 @@
+.advantages {
+	&__list {
+		padding: 2rem;
+	}
+
+	&__items {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__item {
+		position: relative;
+		flex: 0 0 40%;
+		padding: 2rem 3rem 2rem 5rem;
+		color: $colorMain;
+		text-transform: uppercase;
+		&:before {
+			display: block;
+			content: '';
+			width: 4rem;
+			height: 4rem;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: hsl(140, 40%, 55%);
+			border-radius: 50%;
+		}
+	}
+}

@@ -10,10 +10,10 @@ new Swiper('.image-slider', {
 	},
 	loop: true,
 	autoplay: {
-		delay: 2000,
+		delay: 5000,
 		disabledOnInteraction: true,
 	},
-	speed: 800,
+	speed: 1200,
 	// direction: 'vertical',
 	// effect: 'cube',
 	// cubeEffect: {

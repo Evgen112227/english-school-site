@@ -1,0 +1,41 @@
+.footer {
+	padding: 1rem;
+	background-color: $colorMain;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+
+	// .footer__bottom
+	&__bottom {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	// .footer__column1
+	section {
+		margin-right: 3rem;
+	}
+
+	// .footer__list1
+
+	&__list1 {
+	}
+
+	// .footer__item1
+
+	&__item1 {
+		&:hover .footer__link1 {
+			color: orange;
+		}
+		margin-bottom: 2rem;
+	}
+
+	// .footer___link1
+
+	&__link1 {
+		color: #c4c4bc;
+	}
+}

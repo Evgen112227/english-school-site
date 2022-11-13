@@ -1,0 +1,115 @@
+.prices {
+	&__info {
+		margin-bottom: 2rem;
+	}
+
+	&__title {
+		margin-bottom: 2rem;
+	}
+
+	&__text {
+		font-size: 1.6rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -1rem;
+		margin-left: -1rem;
+	}
+
+	&__card {
+		margin-bottom: 2rem;
+		flex: 1 1 25%;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		max-width: 25%;
+	}
+}
+.card {
+	transition: all 0.3s;
+	&:hover {
+		transform: translateY(-5px);
+	}
+	&:hover &__link {
+		box-shadow: 0 1rem 3rem rgb(31 45 61 / 13%);
+	}
+	position: relative;
+	&__link {
+		display: flex;
+		min-height: 100%;
+		flex-direction: column;
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+		padding: 1rem 1rem 2rem 1rem;
+		background: #fff;
+		border-radius: 4px;
+		box-shadow: 0 0 20px 5px rgb(0 0 0 / 10%);
+		transition: all 0.2s ease;
+		color: #5a5665;
+	}
+
+	&__icon {
+		width: 45px;
+		height: 45px;
+		fill: #d33e50;
+		z-index: 1;
+		position: relative;
+		margin: 0 0 1rem;
+		padding: 15px;
+		background: #f5f7f9;
+		display: inline-block;
+		border-radius: 500%;
+		height: 100%;
+		margin-bottom: 4rem;
+	}
+
+	&__image {
+		vertical-align: top;
+		width: 100%;
+	}
+
+	&__title {
+		min-height: 4rem;
+		max-width: 70%;
+		font-size: 2rem;
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+	}
+
+	&__text {
+		flex-grow: 1;
+		max-width: 80%;
+		padding-bottom: 1rem;
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+	}
+
+	&__price {
+		text-align: center;
+		span {
+			font-weight: bold;
+			font-size: 3rem;
+		}
+	}
+
+	&__more {
+		display: flex;
+		justify-content: flex-end;
+		svg {
+			border-radius: 50%;
+		}
+	}
+
+	&:hover {
+		svg {
+			transition: all 0.5s ease;
+			transform: scale(1.2);
+		}
+		.arrow-right {
+			transition: all 0.5s ease;
+			fill: #d33e50;
+		}
+	}
+}
