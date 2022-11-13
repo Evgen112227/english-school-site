@@ -760,19 +760,19 @@ h2 {
   margin-bottom: 15px;
 }
 .after-education .icon-6 {
-  background: url("/img/6.png") no-repeat center center/65px;
+  background: url("../img/6.png") no-repeat center center/65px;
 }
 .after-education .icon-7 {
-  background: url("/img/7.png") no-repeat center center/65px;
+  background: url("../img/7.png") no-repeat center center/65px;
 }
 .after-education .icon-8 {
-  background: url("/img/8.png") no-repeat center center/65px;
+  background: url("../img/8.png") no-repeat center center/65px;
 }
 .after-education .icon-9 {
-  background: url("/img/9.png") no-repeat center center/65px;
+  background: url("../img/9.png") no-repeat center center/65px;
 }
 .after-education .icon-10 {
-  background: url("/img/10.png") no-repeat center center/65px;
+  background: url("../img/10.png") no-repeat center center/65px;
 }
 .after-education__title {
   text-transform: uppercase;
