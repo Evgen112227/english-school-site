@@ -1,4 +1,6 @@
 .needs {
+	background-image: linear-gradient(-90deg, #f3ffe5 0%, #f1f4f9 100%);
+	padding-top: 7rem;
 	margin-top: 5rem;
 	&__title {
 		margin-bottom: 3rem;
@@ -11,7 +13,6 @@
 	}
 
 	&__item {
-		margin-bottom: 3rem;
 	}
 
 	&__arrow {
@@ -20,26 +21,30 @@
 		&:after {
 			position: absolute;
 			content: '';
-			transform: translate(-50%, -40%);
+			transform: translate(-50%, -40%) rotate(-90deg);
 			top: 50%;
 			left: 50%;
 			width: 3rem;
 			height: 3rem;
-			background-image: url('../img/upward-arrow.png');
+			background-image: url('../img/upward-arrow.svg');
 			background-size: 3rem 3rem;
 			animation: go-top-bottom 1.5s infinite alternate;
 		}
 	}
 
 	&__problem {
-		font-size: 1.8rem;
+		font-size: 2rem;
+		font-style: italic;
+		line-height: 1.1;
 		font-weight: 500;
-		padding-bottom: 3rem;
+		padding-bottom: 2rem;
 		position: relative;
 	}
 
 	&__solution {
-		font-size: 1.8rem;
+		font-weight: 500;
+		font-size: 1.75rem;
+		line-height: 1.1;
 		margin-top: 1rem;
 	}
 }
@@ -55,14 +60,15 @@
 
 .item {
 	flex: 0 0 50%;
+	display: flex;
+	align-items: center;
 	min-height: 22rem;
 	margin: 0 auto;
-	padding: 2rem 2rem 4rem;
+	padding: 2rem 1rem 2rem;
 	display: flex;
-	margin-bottom: 2rem;
 	justify-content: space-around;
 	&:not(:last-child) {
-		margin-bottom: 3rem;
+		margin-bottom: 2rem;
 	}
 
 	&__img {
@@ -92,4 +98,9 @@
 		margin: 0;
 		margin-left: 5rem;
 	}
+}
+
+.needs__item--full-row {
+	flex: 1 1 auto;
+	max-width: 600px;
 }

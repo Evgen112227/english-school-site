@@ -1,14 +1,18 @@
 .prices {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	padding-top: 6rem;
 	&__info {
 		margin-bottom: 2rem;
 	}
 
 	&__title {
-		margin-bottom: 2rem;
 	}
 
 	&__text {
-		font-size: 1.6rem;
+		font-size: 2rem;
+		line-height: 1.3;
+		margin-bottom: 4rem;
 	}
 
 	&__list {
@@ -24,6 +28,11 @@
 		padding-right: 1rem;
 		padding-left: 1rem;
 		max-width: 25%;
+	}
+	&__additional-info {
+		margin-top: 2rem;
+		font-size: 2rem;
+		line-height: 1.3;
 	}
 }
 .card {
@@ -73,7 +82,9 @@
 	&__title {
 		min-height: 4rem;
 		max-width: 70%;
-		font-size: 2rem;
+		font-size: 2.2rem;
+		line-height: 1.2;
+		font-weight: 500;
 		text-transform: uppercase;
 		margin-bottom: 2rem;
 	}
@@ -82,11 +93,13 @@
 		flex-grow: 1;
 		max-width: 80%;
 		padding-bottom: 1rem;
-		font-size: 1.2rem;
-		margin-bottom: 2rem;
+		font-size: 1.6rem;
+		line-height: 1.2;
+		margin-bottom: 1rem;
 	}
 
 	&__price {
+		font-size: 2rem;
 		text-align: center;
 		span {
 			font-weight: bold;

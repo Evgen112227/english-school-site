@@ -1,5 +1,5 @@
 .footer {
-	padding: 1rem;
+	padding: 2rem;
 	background-color: $colorMain;
 	&__top {
 		display: flex;
@@ -36,6 +36,8 @@
 	// .footer___link1
 
 	&__link1 {
-		color: #c4c4bc;
+		color: #fff;
+		font-size: 1.6rem;
+		font-weight: 500;
 	}
 }
