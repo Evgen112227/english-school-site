@@ -87,7 +87,7 @@ caption {
 		margin-left: 1.5rem;
 	}
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	h1 {
 		max-width: 100%;
 		font-size: 1.8rem;
@@ -110,4 +110,9 @@ caption {
 
 .th-quantity {
 	min-width: 20rem;
+}
+
+.individual {
+	font-size: 1.4rem;
+	margin-top: -2rem;
 }
