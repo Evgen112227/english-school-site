@@ -252,7 +252,7 @@ strong {
   background: #324158;
 }
 .submenu__item:not(:last-child) {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.7);
 }
 .submenu__link {
   display: block;
@@ -278,20 +278,48 @@ strong {
 .about__strong {
   display: inline-block;
   margin-bottom: 2rem;
+  position: relative;
 }
 .about__list {
   margin-top: 2rem;
+  position: relative;
 }
 .about__item {
   margin-bottom: 1rem;
   list-style: disc;
 }
 .about__text {
+  color: #fff;
   padding: 4rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  background-color: rgb(255, 160, 168);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about__img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(2.5px);
+          filter: blur(2.5px);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about__form {
   background-color: rgb(195, 195, 195);
@@ -712,6 +740,7 @@ strong {
   padding: 1rem;
 }
 .image-slider__img {
+  text-align: center;
   margin-bottom: 2rem;
   height: 220px;
 }
@@ -729,6 +758,7 @@ strong {
 .image-slider__header {
   font-size: 2rem;
   margin-bottom: 1rem;
+  min-height: 4rem;
 }
 .image-slider__paragraph {
   font-size: 1.6rem;
@@ -795,6 +825,10 @@ strong {
 .fa-arrow-left:focus,
 .fa-arrow-left:active {
   outline: none;
+}
+
+.contain {
+  width: auto !important;
 }
 
 .after-education {
