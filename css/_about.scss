@@ -6,15 +6,22 @@
 		display: flex;
 	}
 
+	&__message {
+		text-align: left;
+		padding: 1rem;
+	}
+
 	&__strong {
 		display: inline-block;
 		margin-bottom: 2rem;
 		position: relative;
+		color: #000;
 	}
 
 	&__list {
 		margin-top: 2rem;
 		position: relative;
+		color: #000;
 	}
 
 	&__item {
@@ -31,6 +38,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		background: linear-gradient(1deg, #edefee, #c9c9c9);
 	}
 
 	&__img {
@@ -45,9 +53,9 @@
 	}
 
 	&__form {
-		background-color: rgb(195, 195, 195);
 		flex: 1 1 50%;
-		padding: 8rem 2rem;
+		padding: 8rem 5rem;
+		position: relative;
 	}
 }
 
@@ -56,6 +64,7 @@
 		border-radius: 10px;
 		padding: 2rem;
 		background-color: rgb(248, 248, 248);
+		position: relative;
 	}
 
 	&__discount {
@@ -65,7 +74,7 @@
 	}
 
 	&__content {
-		padding: 1rem;
+		padding: 5px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -79,7 +88,6 @@
 		color: #575757;
 		margin: 0 auto;
 		margin-bottom: 1rem;
-
 		outline: 0;
 	}
 
@@ -103,5 +111,94 @@
 	&__agree {
 		font-size: 2rem;
 		font-weight: 600;
+	}
+}
+
+.message-about {
+	color: $colorMain;
+	// .message-about__header
+
+	&__header {
+		margin-bottom: 1rem;
+		font-size: 3rem;
+		opacity: 1;
+		animation-name: appear;
+		animation-duration: 4s;
+		animation-iteration-count: 1;
+	}
+
+	// .message-about__list
+
+	&__list {
+		padding: 1rem;
+		padding-left: 3rem;
+	}
+
+	// .message-about__link
+
+	&__item {
+		font-size: 2.1rem;
+		padding-bottom: 9px;
+		list-style: disc;
+	}
+}
+
+.item1 {
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+	animation-name: from-bottom;
+	opacity: 0;
+	transform: translateY(100px);
+	animation-fill-mode: forwards;
+}
+
+.item2 {
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-delay: 2s;
+	animation-name: from-bottom;
+	opacity: 0;
+	transform: translateY(80px);
+	animation-fill-mode: forwards;
+}
+.item3 {
+	animation-duration: 1.5s;
+
+	animation-iteration-count: 1;
+	animation-delay: 3s;
+	animation-name: from-bottom;
+	opacity: 0;
+	transform: translateY(60px);
+	animation-fill-mode: forwards;
+}
+.item4 {
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-delay: 4s;
+	animation-name: from-bottom;
+	opacity: 0;
+	transform: translateY(40px);
+	animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+@keyframes from-bottom {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }

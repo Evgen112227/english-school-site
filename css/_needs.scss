@@ -1,9 +1,9 @@
 .needs {
 	background-image: linear-gradient(-90deg, #f3ffe5 0%, #f1f4f9 100%);
-	padding-top: 7rem;
+	padding-top: 4rem;
 	margin-top: 5rem;
 	&__title {
-		margin-bottom: 3rem;
+		margin-bottom: 1rem;
 	}
 
 	&__list {
@@ -17,7 +17,7 @@
 
 	&__arrow {
 		position: relative;
-		min-height: 2rem;
+		min-height: 1rem;
 		&:after {
 			position: absolute;
 			content: '';
@@ -33,17 +33,17 @@
 	}
 
 	&__problem {
-		font-size: 2rem;
+		font-size: 1.7rem;
 		font-style: italic;
 		line-height: 1.1;
 		font-weight: 500;
-		padding-bottom: 2rem;
+		padding-bottom: 1.5rem;
 		position: relative;
 	}
 
 	&__solution {
 		font-weight: 500;
-		font-size: 1.75rem;
+		font-size: 1.55rem;
 		line-height: 1.1;
 		margin-top: 1rem;
 	}
@@ -62,20 +62,19 @@
 	flex: 0 0 50%;
 	display: flex;
 	align-items: center;
-	min-height: 22rem;
+	min-height: 18rem;
 	margin: 0 auto;
-	padding: 2rem 1rem 2rem;
+	padding: 1rem 1rem 1rem;
 	display: flex;
 	justify-content: space-around;
 	&:not(:last-child) {
-		margin-bottom: 2rem;
 	}
 
 	&__img {
 		flex: 1 0 100%;
 		margin-right: 1.5rem;
-		max-width: 20rem;
-		max-height: 20rem;
+		max-width: 15rem;
+		max-height: 15rem;
 	}
 
 	&__picture {
@@ -102,5 +101,5 @@
 
 .needs__item--full-row {
 	flex: 1 1 auto;
-	max-width: 600px;
+	max-width: 700px;
 }
