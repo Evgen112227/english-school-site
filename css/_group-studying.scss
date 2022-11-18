@@ -1,0 +1,270 @@
+.group-studying {
+	margin-top: 12rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	background: linear-gradient(90deg, #454545, #212121);
+	margin-bottom: 4rem;
+	// .group-studying__title
+
+	&__title {
+		text-align: center;
+		margin-bottom: 3rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	// .group-studying__button
+
+	&__button {
+		margin-bottom: 3rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 1.5rem 2rem;
+		background-color: #02be6e;
+		border-radius: 10px;
+		color: #fff;
+		text-transform: uppercase;
+		&:hover {
+			background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+		}
+	}
+
+	// .group-studying__list
+
+	&__list {
+		display: grid;
+		align-content: center;
+		justify-content: center;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 4rem 1rem;
+	}
+
+	// .group-studying__item
+
+	&__item {
+		gap: 20px;
+		display: grid;
+		grid-template-columns: 50px 1fr;
+	}
+
+	// .group-studying__icon
+
+	&__icon {
+		img {
+			max-width: 50px;
+		}
+	}
+
+	// .group-studying__text-top
+
+	&__text-top {
+		line-height: 1.3;
+		font-size: 1.4rem;
+		align-self: center;
+		justify-self: start;
+	}
+}
+
+.group-advantages {
+	font-size: 1.5rem;
+	color: #000;
+	margin-bottom: 5rem;
+
+	// .group-advantages__title
+
+	&__title {
+		padding-left: 6rem;
+		margin-bottom: 2rem;
+	}
+
+	// .group-advantages__description
+
+	&__description {
+		position: relative;
+		padding-left: 6rem;
+		margin-bottom: 4rem;
+		font-size: 1.6rem;
+		line-height: 1.4;
+		font-weight: 500;
+		&:before {
+			content: '';
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			left: 0;
+			top: 2px;
+			background-image: url('../img/question-mark.svg');
+		}
+	}
+
+	// .group-advantages__wrapper
+
+	&__wrapper {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		gap: 3rem;
+	}
+
+	// .group-advantages__picture
+
+	&__left {
+		flex: 1 0 250px;
+		max-height: 250px;
+	}
+	&__right {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	// .group-advantages__image
+
+	&__image {
+		height: 100%;
+		max-width: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+
+	// .group-advantages__subtitle
+
+	&__subtitle {
+		position: relative;
+		padding-left: 4rem;
+		font-size: 1.7rem;
+		color: $colorMain;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: -4px;
+			left: 0;
+			background-image: url('../img/check-icon.svg');
+		}
+	}
+
+	// .group-advantages__text
+
+	&__text {
+		padding-left: 0.5rem;
+		margin-bottom: 2rem;
+		font-size: 1.4rem;
+	}
+}
+
+///////////////////////////////////////////////////
+
+.group-form {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	background: url('../img/free-testing.jpg') 87% no-repeat, linear-gradient(90deg, #121117, #00a89b);
+
+	// .group-form__wrapper
+
+	&__wrapper {
+	}
+
+	&__title {
+		padding-left: 5rem;
+		color: #fff;
+		span {
+			color: rgb(255, 60, 102);
+		}
+	}
+}
+.form {
+	// .form__content
+
+	&__content {
+	}
+
+	// .form__content--horizontal
+
+	&__content--horizontal {
+	}
+
+	// .form__email
+
+	&__email {
+	}
+
+	// .form__tel
+
+	&__tel {
+	}
+
+	// .form__agree
+
+	&__agree {
+	}
+}
+
+//////////////////////////////////////@at-root.group-benefits {
+
+.group-benefits {
+	&__wrapper {
+		display: flex;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	// .group-benefits__left
+
+	&__left {
+		margin-top: auto;
+		margin-bottom: auto;
+		color: #000;
+		max-width: 400px;
+		margin-right: 4rem;
+	}
+
+	// .group-benefits__text
+
+	&__text {
+		padding-left: 0.5rem;
+		margin-bottom: 1rem;
+		font-size: 1.2rem;
+		line-height: 1.2;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			left: -40px;
+			top: -6px;
+			width: 25px;
+			height: 25px;
+			transform: rotate(-45deg);
+			background-image: url('../img/dart.svg');
+		}
+		span {
+			display: inline-block;
+			font-weight: 600;
+			margin-bottom: 3px;
+			font-style: italic;
+		}
+	}
+
+	// .group-benefits__right
+
+	&__right {
+	}
+
+	// .group-benefits__image
+
+	&__image {
+		border-radius: 10px;
+		max-width: 300px;
+		max-height: 300px;
+	}
+}
