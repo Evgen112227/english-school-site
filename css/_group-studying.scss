@@ -1,5 +1,5 @@
 .group-studying {
-	margin-top: 12rem;
+	color: #fff;
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 	background: linear-gradient(90deg, #454545, #212121);
@@ -70,8 +70,10 @@
 	}
 }
 
+////////////////////////////////////////////////////////////////
+
 .group-advantages {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	color: #000;
 	margin-bottom: 5rem;
 
@@ -88,7 +90,7 @@
 		position: relative;
 		padding-left: 6rem;
 		margin-bottom: 4rem;
-		font-size: 1.6rem;
+		font-size: 2rem;
 		line-height: 1.4;
 		font-weight: 500;
 		&:before {
@@ -114,8 +116,7 @@
 	// .group-advantages__picture
 
 	&__left {
-		flex: 1 0 250px;
-		max-height: 250px;
+		flex: 0 0 250px;
 	}
 	&__right {
 		display: flex;
@@ -126,8 +127,8 @@
 	// .group-advantages__image
 
 	&__image {
-		height: 100%;
-		max-width: 100%;
+		height: auto;
+		width: 100%;
 		object-fit: cover;
 		border-radius: 10px;
 	}
@@ -135,9 +136,11 @@
 	// .group-advantages__subtitle
 
 	&__subtitle {
+		font-style: italic;
+		letter-spacing: 0.7px;
 		position: relative;
 		padding-left: 4rem;
-		font-size: 1.7rem;
+		font-size: 1.9rem;
 		color: $colorMain;
 		font-weight: 600;
 		margin-bottom: 1rem;
@@ -157,7 +160,7 @@
 	&__text {
 		padding-left: 0.5rem;
 		margin-bottom: 2rem;
-		font-size: 1.4rem;
+		font-size: 1.7rem;
 	}
 }
 
@@ -166,7 +169,7 @@
 .group-form {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
-	background: url('../img/free-testing.jpg') 87% no-repeat, linear-gradient(90deg, #121117, #00a89b);
+	background: linear-gradient(90deg, #121117, #00a89b);
 
 	// .group-form__wrapper
 
@@ -208,7 +211,7 @@
 	}
 }
 
-//////////////////////////////////////@at-root.group-benefits {
+//////////////////////////////////////
 
 .group-benefits {
 	&__wrapper {
@@ -216,7 +219,7 @@
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 		margin: 0 auto;
-		justify-content: center;
+		justify-content: space-around;
 	}
 
 	// .group-benefits__left
@@ -225,7 +228,7 @@
 		margin-top: auto;
 		margin-bottom: auto;
 		color: #000;
-		max-width: 400px;
+		max-width: 600px;
 		margin-right: 4rem;
 	}
 
@@ -234,7 +237,7 @@
 	&__text {
 		padding-left: 0.5rem;
 		margin-bottom: 1rem;
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 		line-height: 1.2;
 		position: relative;
 		&:before {
@@ -249,6 +252,7 @@
 		}
 		span {
 			display: inline-block;
+			font-size: 2rem;
 			font-weight: 600;
 			margin-bottom: 3px;
 			font-style: italic;

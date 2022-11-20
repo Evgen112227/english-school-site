@@ -86,6 +86,9 @@
 	&:after {
 		content: '';
 	}
+	@media (max-width: 1240px) {
+		left: 3%;
+	}
 }
 .swiper-button-next {
 	position: absolute;
@@ -93,6 +96,9 @@
 	right: -5%;
 	&:after {
 		content: '';
+	}
+	@media (max-width: 1240px) {
+		right: 3%;
 	}
 }
 
