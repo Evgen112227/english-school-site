@@ -33,8 +33,8 @@ if (isMobile.any()) {
 } else {
 	document.body.classList.add('_pc');
 }
-const menuBody = document.querySelector('.menu__body');
 
+const menuBody = document.querySelector('.menu__body');
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
 	iconMenu.addEventListener('click', (e) => {
