@@ -77,6 +77,12 @@
 	position: relative;
 }
 
+@media (max-width: 400px) {
+	.programms._container {
+		padding: 0 0.5rem;
+	}
+}
+
 .swiper-navigation {
 }
 .swiper-button-prev {
@@ -109,6 +115,9 @@
 	&:focus,
 	&:active {
 		outline: none;
+	}
+	@media (max-width: 500px) {
+		font-size: 0;
 	}
 }
 

@@ -1,3 +1,6 @@
+.header__tel--botom {
+	display: none;
+}
 .header {
 	position: fixed;
 	z-index: 999;
@@ -30,13 +33,13 @@
 	}
 
 	&__free-testing-button {
-		background: #ffc714;
+		background: #3a5c87;
 		margin-right: 2rem;
 		align-self: center;
 	}
 
 	&__free-lesson-button {
-		background: #e51f2b;
+		background: #cc6380;
 		margin-right: 2rem;
 	}
 
@@ -82,6 +85,9 @@
 	margin-right: 3rem;
 	&--faded {
 		opacity: 0.75;
+	}
+	@media (max-width: 1020px) {
+		margin-right: 1rem;
 	}
 }
 
@@ -138,6 +144,9 @@
 		position: relative;
 		margin: 0px 0px 0px 20px;
 		font-size: 18px;
+		&:hover {
+			background-color: #283a8f;
+		}
 	}
 
 	// .menu__link
@@ -145,9 +154,8 @@
 	&__link {
 		color: #fff;
 		flex: 1 1 auto;
-		&:hover {
-			background-color: #ffc714;
-		}
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 	// .menu__sub-list
@@ -156,23 +164,29 @@
 		position: absolute;
 		top: 100%;
 		left: 0;
-		background-color: black;
+		background-color: rgb(0, 18, 104);
 		min-width: 300px;
-		padding: 15px;
 	}
 
 	// .menu__sub-item
 
 	&__sub-item {
-		margin: 0px 0px 10px 0px;
+		width: 100%;
+		margin: 0px 0px 25px 0px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	// .menu__sub-link
 
 	&__sub-link {
+		width: 100%;
+		display: inline-block;
+		padding: 10px 0 10px 20px;
 		color: #fff;
 		&:hover {
-			background-color: #ffc714;
+			background-color: #283a8f;
 		}
 	}
 }
@@ -183,8 +197,8 @@
 	pointer-events: all;
 }
 
-//ONLY on display wider than 1000px
-@media (min-width: 1000px) {
+/////////////////////ONLY on display wider than 1000px
+@media (min-width: 1020px) {
 	.menu__list {
 		display: flex;
 		align-items: center;
@@ -204,8 +218,80 @@
 	display: flex;
 	align-items: center;
 }
-//ONLY on display less than 1000px to display burger icon
-@media (max-width: 1000px) {
+
+.header__free-testing-button--bottom,
+.header__free-lesson-button--bottom,
+.viber--bottom,
+.telegram--bottom {
+	display: none;
+}
+
+///////////////////////////ONLY on display less than 1000px to display burger icon
+@media (max-width: 1020px) {
+	.header__free-testing-button--bottom,
+	.header__free-lesson-button--bottom {
+		display: block;
+		position: absolute;
+		color: #d33e50;
+		z-index: 999;
+		top: 17px;
+		left: 70px;
+		color: #fff;
+		font-size: 1.2rem;
+	}
+
+	.header__free-testing-button--bottom {
+		@media (max-width: 550px) {
+			display: none;
+		}
+	}
+
+	.header__tel--botom {
+		@media (max-width: 1020px) {
+			display: block;
+			position: absolute;
+			font-size: 0;
+			z-index: 999;
+			top: 17px;
+			right: 120px;
+			color: #fff;
+			margin-top: 0.5rem;
+			&:before {
+				content: '';
+				width: 30px;
+				height: 30px;
+				top: -6px;
+				left: -20px;
+				background: url(../img/phone.svg) no-repeat center;
+				position: absolute;
+			}
+		}
+		@media (max-width: 370px) {
+			left: 225px;
+			display: block;
+		}
+	}
+
+	.header__free-lesson-button--bottom {
+		left: 270px;
+		@media (max-width: 550px) {
+			left: 70px;
+		}
+	}
+
+	.viber--bottom,
+	.telegram--bottom {
+		display: block;
+		position: absolute;
+		z-index: 999;
+		top: 17px;
+		right: 10px;
+	}
+
+	.telegram--bottom {
+		right: 50px;
+	}
+
 	.menu__icon {
 		z-index: 5;
 		display: block;
@@ -308,6 +394,8 @@
 	.menu__arrow {
 		margin-left: auto;
 		margin-right: 30px;
-		background-color: #e51f2b;
+	}
+	.menu__item:hover {
+		background-color: transparent;
 	}
 }

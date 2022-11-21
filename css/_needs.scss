@@ -10,6 +10,10 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		@media (max-width: 850px) {
+			flex-direction: column;
+			gap: 20px;
+		}
 	}
 
 	&__item {
@@ -39,6 +43,7 @@
 		font-weight: 500;
 		padding-bottom: 1.5rem;
 		position: relative;
+		color: $colorMain;
 	}
 
 	&__solution {
@@ -73,6 +78,9 @@
 		margin-right: 1.5rem;
 		min-width: 15rem;
 		height: 15rem;
+		@media (max-width: 500px) {
+			display: none;
+		}
 	}
 
 	&__picture {
@@ -100,4 +108,7 @@
 .needs__item--full-row {
 	flex: 1 1 auto;
 	max-width: 700px;
+	@media (max-width: 850px) {
+		max-width: none;
+	}
 }
