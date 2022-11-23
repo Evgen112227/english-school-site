@@ -216,7 +216,8 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 11rem;
+  min-width: 11rem;
+  max-width: 11rem;
   height: 100%;
   margin-right: 3rem;
 }
@@ -241,6 +242,11 @@ strong {
   background: rgb(0, 18, 104);
   -webkit-box-shadow: 0px 5px 14px -3px rgba(64, 64, 64, 0.84);
           box-shadow: 0px 5px 14px -3px rgba(64, 64, 64, 0.84);
+}
+@media (max-width: 1020px) {
+  .header__bottom {
+    min-height: 70px;
+  }
 }
 .header__wrapper {
   display: -webkit-box;
@@ -287,7 +293,7 @@ strong {
   top: 100%;
   left: 0;
   background-color: rgb(0, 18, 104);
-  min-width: 300px;
+  min-width: 90%;
 }
 .menu__sub-item {
   width: 100%;
@@ -427,7 +433,7 @@ strong {
     width: 30px;
     height: 18px;
     cursor: pointer;
-    margin-top: 25px;
+    top: 24px;
   }
 }
 @media (max-width: 1020px) {
@@ -1097,6 +1103,12 @@ strong {
   margin-bottom: 4rem;
   padding-top: 6rem;
 }
+@media (max-width: 600px) {
+  .prices {
+    margin-top: 1rem;
+    padding-top: 3rem;
+  }
+}
 .prices__info {
   margin-bottom: 2rem;
 }
@@ -1224,49 +1236,22 @@ strong {
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
-@media (max-width: 1000px) {
-  .card__title {
-    font-size: 2.1rem;
-  }
-}
-@media (max-width: 860px) {
-  .card__title {
-    font-size: 2rem;
-  }
-}
 .card__text {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   max-width: 80%;
-  padding-bottom: 1rem;
-  font-size: 1.6rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.9rem;
   line-height: 1.2;
-  margin-bottom: 1rem;
-}
-@media (max-width: 1000px) {
-  .card__text {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 900px) {
-  .card__text {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 500px) {
-  .card__text {
-    font-size: 1.8rem;
-  }
 }
 .card__price {
-  font-size: 2rem;
+  font-size: 2.6rem;
   text-align: center;
-  margin-bottom: 1rem;
 }
 .card__price span {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 3.6rem;
 }
 .card__more {
   display: -webkit-box;
@@ -1422,12 +1407,12 @@ strong {
           flex: 1 0 auto;
 }
 .image-slider__header {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
   min-height: 4rem;
 }
 .image-slider__paragraph {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .image-slider__button {
   -webkit-transition: all 0.3s;
@@ -1436,6 +1421,7 @@ strong {
   padding-top: 2rem;
   margin: auto 1rem 1rem auto;
   text-align: right;
+  font-size: 1.8rem;
 }
 .image-slider__button div {
   padding: 1rem;
@@ -1566,7 +1552,7 @@ strong {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 80%;
             flex: 1 1 80%;
-    max-width: 80%;
+    max-width: 90%;
     padding: 1rem 1rem;
   }
 }

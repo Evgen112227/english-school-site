@@ -80,7 +80,8 @@
 .logo {
 	display: flex;
 	flex-direction: column;
-	width: 11rem;
+	min-width: 11rem;
+	max-width: 11rem;
 	height: 100%;
 	margin-right: 3rem;
 	img {
@@ -102,6 +103,9 @@
 	&__bottom {
 		background: $colorMain;
 		box-shadow: 0px 5px 14px -3px rgb(64 64 64 / 84%);
+		@media (max-width: 1020px) {
+			min-height: 70px;
+		}
 	}
 
 	&__wrapper {
@@ -170,7 +174,7 @@
 		top: 100%;
 		left: 0;
 		background-color: rgb(0, 18, 104);
-		min-width: 300px;
+		min-width: 90%;
 	}
 
 	// .menu__sub-item
@@ -304,7 +308,7 @@
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
-		margin-top: 25px;
+		top: 24px;
 	}
 	.menu__icon span,
 	.menu__icon::before,
