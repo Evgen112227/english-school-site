@@ -217,6 +217,7 @@ strong {
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 11rem;
+  max-width: 11rem;
   height: 100%;
   margin-right: 3rem;
   -webkit-box-flex: 0;
@@ -232,6 +233,7 @@ strong {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   min-width: 110px;
+  max-width: 110px;
 }
 .logo--faded {
   opacity: 0.75;
