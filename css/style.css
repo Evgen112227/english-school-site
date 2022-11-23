@@ -300,6 +300,7 @@ strong {
   left: 0;
   background-color: rgb(0, 18, 104);
   min-width: 90%;
+  width: 250px;
 }
 .menu__sub-item {
   width: 100%;
@@ -1875,6 +1876,13 @@ strong {
   padding-left: 6rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 550px) {
+  .group-advantages__title {
+    margin-bottom: 6rem;
+    padding-left: 0rem;
+    text-align: center;
+  }
+}
 .group-advantages__description {
   position: relative;
   padding-left: 6rem;
@@ -1882,6 +1890,11 @@ strong {
   font-size: 2rem;
   line-height: 1.4;
   font-weight: 500;
+}
+@media (max-width: 550px) {
+  .group-advantages__description {
+    padding-left: 2rem;
+  }
 }
 .group-advantages__description:before {
   content: "";
@@ -1891,6 +1904,15 @@ strong {
   left: 0;
   top: 2px;
   background-image: url("../img/question-mark.svg");
+}
+@media (max-width: 550px) {
+  .group-advantages__description:before {
+    left: 50%;
+    top: -54px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 .group-advantages__wrapper {
   -webkit-box-align: center;
@@ -1904,10 +1926,23 @@ strong {
   display: flex;
   gap: 3rem;
 }
+@media (max-width: 660px) {
+  .group-advantages__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .group-advantages__left {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
+}
+@media (max-width: 660px) {
+  .group-advantages__left {
+    width: 70%;
+  }
 }
 .group-advantages__right {
   display: -webkit-box;
@@ -1964,10 +1999,35 @@ strong {
   padding-left: 5rem;
   color: #fff;
 }
+@media (max-width: 400px) {
+  .group-form__title {
+    padding-left: 0rem;
+    text-align: center;
+  }
+}
 .group-form__title span {
   color: rgb(255, 60, 102);
 }
 
+@media (max-width: 620px) {
+  .form__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (max-width: 620px) {
+  .form__email {
+    width: 80%;
+  }
+}
+@media (max-width: 620px) {
+  .form__tel {
+    width: 80%;
+  }
+}
 .group-benefits__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1978,12 +2038,31 @@ strong {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+@media (max-width: 760px) {
+  .group-benefits__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .group-benefits__left {
+  padding-left: 5rem;
   margin-top: auto;
   margin-bottom: auto;
   color: #000;
   max-width: 600px;
-  margin-right: 4rem;
+}
+@media (max-width: 400px) {
+  .group-benefits__left {
+    padding-left: 0;
+  }
 }
 .group-benefits__text {
   padding-left: 0.5rem;
@@ -1996,13 +2075,18 @@ strong {
   position: absolute;
   content: "";
   left: -40px;
-  top: -6px;
+  top: -3px;
   width: 25px;
   height: 25px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   background-image: url("../img/dart.svg");
+}
+@media (max-width: 400px) {
+  .group-benefits__text:before {
+    left: 10px;
+  }
 }
 .group-benefits__text span {
   display: inline-block;
@@ -2011,14 +2095,33 @@ strong {
   margin-bottom: 3px;
   font-style: italic;
 }
+@media (max-width: 400px) {
+  .group-benefits__text span {
+    padding-left: 5rem;
+  }
+}
 .group-benefits__right {
-  max-width: 50%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  max-width: 555px;
+}
+@media (max-width: 760px) {
+  .group-benefits__right {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
 }
 .group-benefits__image {
-  margin-left: 2rem;
   border-radius: 10px;
-  width: auto;
-  height: 400px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .kids-description {
@@ -2090,8 +2193,10 @@ strong {
   line-height: 1.2;
 }
 .kids-programs__image {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   max-width: 50%;
-  max-height: 300px;
+  max-height: 350px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -2101,7 +2206,6 @@ strong {
 }
 
 .kids-programs__schedule {
-  padding: 0 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2111,6 +2215,7 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1rem;
 }
 .kids-programs__schedule .schedule {
   font-size: 2.3rem;
@@ -2119,10 +2224,11 @@ strong {
 }
 .kids-programs__schedule .more {
   margin-left: auto;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
   color: #fff;
-  background: #cc6380;
-  padding: 15px 8px;
+  background: #b17989;
+  padding: 6px;
   border-radius: 10px;
 }
 .kids-programs__schedule .more:hover {
