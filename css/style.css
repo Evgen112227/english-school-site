@@ -217,9 +217,13 @@ strong {
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 11rem;
-  max-width: 11rem;
   height: 100%;
   margin-right: 3rem;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .logo img {
   -webkit-box-flex: 0;
