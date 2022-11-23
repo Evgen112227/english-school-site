@@ -24,7 +24,8 @@
 		position: relative;
 		line-height: 1.2;
 		@media (max-width: 800px) {
-			font-size: 1.7rem;
+			font-size: 1.9rem;
+			margin-bottom: 0rem;
 		}
 		span {
 			font-style: italic;
@@ -190,6 +191,7 @@
 		animation-name: appear;
 		animation-duration: 4s;
 		animation-iteration-count: 1;
+		padding-left: 3rem;
 	}
 
 	// .message-about__list
@@ -197,6 +199,7 @@
 	&__list {
 		margin: 0 auto;
 		padding: 1rem;
+		padding-left: 3rem;
 	}
 
 	// .message-about__link

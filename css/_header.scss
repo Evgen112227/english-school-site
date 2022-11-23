@@ -83,6 +83,11 @@
 	width: 11rem;
 	height: 100%;
 	margin-right: 3rem;
+	img {
+		flex-grow: 0;
+		flex-shrink: 0;
+		min-width: 110px;
+	}
 	&--faded {
 		opacity: 0.75;
 	}

@@ -220,6 +220,14 @@ strong {
   height: 100%;
   margin-right: 3rem;
 }
+.logo img {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-width: 110px;
+}
 .logo--faded {
   opacity: 0.75;
 }
@@ -600,7 +608,8 @@ strong {
 }
 @media (max-width: 800px) {
   .about__strong {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+    margin-bottom: 0rem;
   }
 }
 .about__strong span {
@@ -810,10 +819,12 @@ strong {
           animation-duration: 4s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+  padding-left: 3rem;
 }
 .message-about__list {
   margin: 0 auto;
   padding: 1rem;
+  padding-left: 3rem;
 }
 .message-about__item {
   font-size: 2.1rem;
