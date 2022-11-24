@@ -26,6 +26,7 @@ if (isMobile.any()) {
 	if (arrows.length) {
 		arrows.forEach((arrow) => {
 			arrow.addEventListener('click', (e) => {
+				document.querySelector('.menu__arrow').classList.toggle('_active');
 				e.target.closest('.menu__item').classList.toggle('_active');
 			});
 		});

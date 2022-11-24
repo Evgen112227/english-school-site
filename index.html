@@ -122,7 +122,7 @@
 										</li>
 										<li class="menu__item">
 											<a data-goto="#courses" class="menu__link" href="#courses">Курсы</a>
-											<spav class="menu__arrow"></spav>
+											<span class="menu__arrow"></span>
 											<ul class="menu__sub-list">
 												<li class="menu__sub-item"><a class="menu__sub-link" href="group-learning.html">Разговорный английский</a></li>
 												<li class="menu__sub-item"><a class="menu__sub-link" href="kids.html">Английский для детей и подростков</a></li>
@@ -202,11 +202,10 @@
 							</picture>
 							<div class="form__wrapper">
 								<p class="form__text">Запишись на тестирование</p>
-	
-								<form method="post" action="">
+								<form enctype="multipart/form-data" method="post" action="#" id="form" onsubmit="send(event, 'send.php')">
 									<div class="form__content">
-										<input class="form__email" type="email" name="email" placeholder="E-mail" required />
-										<input class="form__tel" type="tel" name="phone" placeholder="Телефон" required />
+										<input class="form__email" type="text" name="email" placeholder="E-mail" required />
+										<input class="form__tel" type="tel" name="tel" placeholder="Телефон" required />
 										<input class="form__agree" type="submit" name="submit" value="Записаться" />
 									</div>
 								</form>

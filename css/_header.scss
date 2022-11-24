@@ -149,6 +149,22 @@
 		border-left: 5px solid transparent;
 		border-right: 5px solid transparent;
 		border-top: 10px solid #fff;
+		position: relative;
+		@media (max-width: 1020px) {
+			&:before {
+				content: '';
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				background-color: rgba($color: #fff, $alpha: 0.3);
+				border-radius: 50%;
+				top: -25px;
+				right: -20px;
+			}
+			&._active {
+				transform: rotate(180deg);
+			}
+		}
 	}
 
 	// .menu__item
@@ -211,7 +227,7 @@
 }
 
 /////////////////////ONLY on display wider than 1000px
-@media (min-width: 1020px) {
+@media (min-width: 1021px) {
 	.menu__list {
 		display: flex;
 		align-items: center;
@@ -392,7 +408,9 @@
 
 	.menu__sub-list {
 		position: relative;
-		background-color: #fff;
+		padding: 1rem 1rem 1rem 1rem;
+		background-color: rgb(193, 225, 255);
+		border-radius: 10px;
 		flex: 1 1 100%;
 		margin-top: 20px;
 		display: none;

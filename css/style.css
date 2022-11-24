@@ -277,6 +277,24 @@ strong {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 10px solid #fff;
+  position: relative;
+}
+@media (max-width: 1020px) {
+  .menu__arrow:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    top: -25px;
+    right: -20px;
+  }
+  .menu__arrow._active {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 .menu__item {
   position: relative;
@@ -325,7 +343,7 @@ strong {
   pointer-events: all;
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1021px) {
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -555,7 +573,9 @@ strong {
 @media (max-width: 1020px) {
   .menu__sub-list {
     position: relative;
-    background-color: #fff;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: rgb(193, 225, 255);
+    border-radius: 10px;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
@@ -2173,6 +2193,16 @@ strong {
 .kids__program-wrapper {
   margin-bottom: 5rem;
 }
+@media (max-width: 800px) {
+  .kids__program-wrapper h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 800px) and (max-width: 700px) {
+  .kids__program-wrapper h2 {
+    font-size: 2.4rem;
+  }
+}
 
 .kids-programs__program {
   margin-bottom: 3rem;
@@ -2181,16 +2211,50 @@ strong {
   display: flex;
   gap: 4rem;
 }
+@media (max-width: 800px) {
+  .kids-programs__program {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 6rem;
+  }
+}
 .kids-programs__program--reversed {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+@media (max-width: 800px) {
+  .kids-programs__program--reversed {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .kids-programs__text {
   max-width: 50%;
   font-size: 2rem;
   line-height: 1.2;
+}
+@media (max-width: 800px) {
+  .kids-programs__text {
+    max-width: 95%;
+  }
 }
 .kids-programs__image {
   -ms-flex-item-align: start;
@@ -2200,11 +2264,23 @@ strong {
   overflow: hidden;
   border-radius: 10px;
 }
+@media (max-width: 800px) {
+  .kids-programs__image {
+    -ms-flex-item-align: center;
+        align-self: center;
+    max-width: 70%;
+  }
+}
 .kids-programs__image img {
   width: 100%;
   height: auto;
 }
 
+@media (max-width: 800px) {
+  .kids-programs__bottom {
+    margin-top: 2rem;
+  }
+}
 .kids-programs__schedule {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2217,10 +2293,33 @@ strong {
           align-items: center;
   margin-top: 1rem;
 }
+@media (max-width: 450px) {
+  .kids-programs__schedule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+  }
+}
 .kids-programs__schedule .schedule {
+  padding-right: 1rem;
   font-size: 2.3rem;
   font-weight: 600;
   margin-left: 2rem;
+}
+@media (max-width: 500px) {
+  .kids-programs__schedule .schedule {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
 .kids-programs__schedule .more {
   margin-left: auto;
@@ -2230,6 +2329,12 @@ strong {
   background: #b17989;
   padding: 6px;
   border-radius: 10px;
+}
+@media (max-width: 450px) {
+  .kids-programs__schedule .more {
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }
 .kids-programs__schedule .more:hover {
   -webkit-filter: brightness(90%);
@@ -2245,12 +2350,23 @@ strong {
   display: flex;
   margin: 0 -2rem;
 }
+@media (max-width: 700px) {
+  .kids-benefits__wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 .kids-benefits__img-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-width: 25%;
   padding: 0 3rem;
+}
+@media (max-width: 700px) {
+  .kids-benefits__img-wrapper {
+    display: none;
+  }
 }
 .kids-benefits__img-wrapper img {
   width: 100%;
