@@ -29,7 +29,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'deribasovich'; // Логин на почте
-    $mail->Password   = 'yoinsgqiqfdllobv'; // Пароль на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('deribasovich@gmail.com', 'КЛИЕНТ'); // Адрес самой почты и имя отправителя
