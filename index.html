@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,19 +10,25 @@
 		<title>Document</title>
 	</head>
 	<body>
-
 		<div class="wrapper1">
 			<header id="header" class="header lock-padding">
 				<div class="header__top _container">
 					<a class="logo" href="index.html">
-						<img class="logo__image" src="img/logo1.jpg" alt="логотип сайта" />
+						<picture>
+							<source type="image/webp" srcset="img/logo1.webp" />
+							<img class="logo__image" src="img/logo1.jpg" alt="логотип сайта" />
+						</picture>
 					</a>
 					<p class="header__text">Курсы<br />английского<br />языка</p>
-					<a href="#popup-testing" class="header__free-testing-button button-action popup__link">запишись на бесплатное тестирование</a>
-					<a href="#popup-free-lesson" class="header__free-lesson-button button-action popup__link">запишись на бесплатный пробный урок</a>
+					<a href="#popup-testing" class="header__free-testing-button button-action popup__link"
+						>запишись на бесплатное тестирование</a
+					>
+					<a href="#popup-free-lesson" class="header__free-lesson-button button-action popup__link"
+						>запишись на бесплатный пробный урок</a
+					>
 					<div class="header__additional-info">
-						<a class="header__tel" href="tel:+375 33 917-71-93">+375 33 917-71-93 (MTC)</a>
-						<a class="header__tel" href="tel:+375 44 733-51-27">+375 44 733-51-27 (A1)</a>
+						<a class="header__tel" href="tel:+375339177193">+375 33 917-71-93 (MTC)</a>
+						<a class="header__tel" href="tel:+375447335127">+375 44 733-51-27 (A1)</a>
 					</div>
 					<div class="socials">
 						<a class="viber" href="viber://chat?number=%2B375339177193" target="_blank" rel="nofollow">
@@ -47,7 +53,7 @@
 								</svg>
 							</span>
 						</a>
-	
+
 						<a class="telegram" href="https://t.me/+375447335127" target="_blank" rel="nofollow">
 							<span>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px">
@@ -66,17 +72,30 @@
 						</a>
 					</div>
 				</div>
-				
+
 				<div class="header__bottom">
-					<div class="_container"> 
+					<div class="_container">
 						<div class="header__wrap">
 							<div class="header__menu menu">
 								<div class="menu__icon">
 									<span></span>
 								</div>
-								<a href="#popup-testing" class="header__free-testing-button button-action popup__link header__free-testing-button--bottom">бесплатное тестирование</a>
-								<a href="#popup-free-lesson" class="header__free-lesson-button button-action popup__link header__free-lesson-button--bottom">бесплатный урок</a>
-								<a class="viber viber--bottom" href="viber://chat?number=%2B375339177193" target="_blank" rel="nofollow">
+								<a
+									href="#popup-testing"
+									class="header__free-testing-button button-action popup__link header__free-testing-button--bottom"
+									>бесплатное тестирование</a
+								>
+								<a
+									href="#popup-free-lesson"
+									class="header__free-lesson-button button-action popup__link header__free-lesson-button--bottom"
+									>бесплатный урок</a
+								>
+								<a
+									class="viber viber--bottom"
+									href="viber://chat?number=%2B375339177193"
+									target="_blank"
+									rel="nofollow"
+								>
 									<span>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px">
 											<path
@@ -114,7 +133,7 @@
 										</svg>
 									</span>
 								</a>
-								<a class="header__tel header__tel--botom" href="tel:+375 33 917-71-93">+375 33 917-71-93 (MTC)</a>
+								<a class="header__tel header__tel--botom" href="tel:+375339177193">+375 33 917-71-93 (MTC)</a>
 								<nav class="menu__body">
 									<ul class="menu__list">
 										<li class="menu__item">
@@ -124,8 +143,12 @@
 											<a data-goto="#courses" class="menu__link" href="#courses">Курсы</a>
 											<span class="menu__arrow"></span>
 											<ul class="menu__sub-list">
-												<li class="menu__sub-item"><a class="menu__sub-link" href="group-learning.html">Разговорный английский</a></li>
-												<li class="menu__sub-item"><a class="menu__sub-link" href="kids.html">Английский для детей и подростков</a></li>
+												<li class="menu__sub-item">
+													<a class="menu__sub-link" href="group-learning.html">Разговорный английский</a>
+												</li>
+												<li class="menu__sub-item">
+													<a class="menu__sub-link" href="kids.html">Английский для детей и подростков</a>
+												</li>
 												<li class="menu__sub-item"><a class="menu__sub-link" href="">Корпоративный английский</a></li>
 												<li class="menu__sub-item">
 													<a class="menu__sub-link" href=""
@@ -168,9 +191,7 @@
 				<section class="about">
 					<h2 class="visually-hidden">О нас</h2>
 					<div class="about__message _container message-about">
-						<p class="message-about__header">
-							New Challenge Club – это курсы разговорного английского языка, где: 
-						</p>
+						<p class="message-about__header">New Challenge Club – это курсы разговорного английского языка, где:</p>
 						<ul class="message-about__list">
 							<li class="message-about__item item1">создана комфортная среда для изучения языка</li>
 							<li class="message-about__item item2">опытные преподаватели искренне заинтересованы в результате</li>
@@ -179,30 +200,33 @@
 						</ul>
 					</div>
 					<!-- New Challenge Club – это курсы разговорного английского языка, где создана комфортная среда для изучения языка, где опытные преподаватели искренне заинтересованы в результате, где вы почувствуете себя легко и непринужденно, а цены вас приятно удивят. -->
-						
-		
-	
+
 					<div class="about__wrapper _container">
-						
 						<div class="about__text">
 							<strong class="about__strong">
-								Запишитесь на <span>бесплатное</span>  тестирование и консультацию, онлайн или офлайн, где мы:</strong
+								Запишитесь на <span>бесплатное</span> тестирование и консультацию, онлайн или офлайн, где мы:</strong
 							>
 							<ul class="about__list">
 								<li class="about__item">Определим ваш уровень английского языка</li>
 								<li class="about__item">Подберем вам курс, который соответствует вашим запросам</li>
 								<li class="about__item">При необходимости, разработаем для вас индивидуальную программу обучения</li>
 								<li class="about__item">Пригласим на пробное БЕСПЛАТНОЕ занятие</li>
-							</г>
+							</ul>
 						</div>
 						<div class="about__form form">
 							<picture>
-								<source srcset="img/form-background.webp" type="image/webp">
-								<img class="about__img" src="img/form-background.jpg" alt="british flag"> 
+								<source type="image/webp" srcset="img/form-background.webp" />
+								<img class="about__img" src="img/form-background.jpg" alt="british flag" />
 							</picture>
 							<div class="form__wrapper">
 								<p class="form__text">Запишись на тестирование</p>
-								<form enctype="multipart/form-data" method="post" action="#" id="form" onsubmit="send(event, 'send.php')">
+								<form
+									enctype="multipart/form-data"
+									method="post"
+									action="#"
+									id="form"
+									onsubmit="send(event, 'send.php')"
+								>
 									<div class="form__content">
 										<input class="form__email" type="text" name="email" placeholder="E-mail" required />
 										<input class="form__tel" type="tel" name="tel" placeholder="Телефон" required />
@@ -222,7 +246,10 @@
 						<div class="needs__list">
 							<div class="needs__item item">
 								<div class="item__img">
-									<img class="item__picture" src="img/headache.jpg" alt="" />
+									<picture>
+										<source type="image/webp" srcset="img/headache.webp" />
+										<img class="item__picture" src="img/headache.jpg" alt="headache" />
+									</picture>
 								</div>
 								<div class="item__description">
 									<div class="needs__problem">
@@ -242,14 +269,17 @@
 							</div>
 							<div class="needs__item item">
 								<div class="item__img">
-									<img class="item__picture" src="img/barrier2.jpg" alt="" />
+									<picture>
+										<source type="image/webp" srcset="img/barrier2.webp" />
+										<img class="item__picture" src="img/barrier2.jpg" alt="brics wall with man" />
+									</picture>
 								</div>
 								<div class="item__description">
 									<div class="needs__problem">
 										<p>Я все понимаю, а сказать не могу, языковой барьер ужасный, боюсь говорить.</p>
 									</div>
 									<div class="needs__arrow"></div>
-	
+
 									<div class="needs__solution">
 										<p>
 											Наши небольшие группы и доброжелательные преподаватели создают комфортную среду и способствуют
@@ -260,7 +290,10 @@
 							</div>
 							<div class="needs__item item needs__item--full-row">
 								<div class="item__img">
-									<img class="item__picture" src="img/travel.jpg" alt="" />
+									<picture>
+										<source type="image/webp" srcset="img/travel.webp" />
+										<img class="item__picture" src="img/travel.jpg" alt="people with suitcases" />
+									</picture>
 								</div>
 								<div class="item__description">
 									<div class="needs__problem">
@@ -270,7 +303,7 @@
 										</p>
 									</div>
 									<div class="needs__arrow"></div>
-	
+
 									<div class="needs__solution">
 										<p>
 											В основе наших программ – современные учебные пособия, с настоящим разговорным английским языком!
@@ -280,14 +313,17 @@
 							</div>
 							<div class="needs__item item">
 								<div class="item__img">
-									<img class="item__picture" src="img/job.jpg" alt="" />
+									<picture>
+										<source type="image/webp" srcset="img/job.webp" />
+										<img class="item__picture" src="img/job.jpg" alt="developer" />
+									</picture>
 								</div>
 								<div class="item__description">
 									<div class="needs__problem">
 										<p>Хочу найти новую работу в сфере ИТ, а там без английского никак.</p>
 									</div>
 									<div class="needs__arrow"></div>
-	
+
 									<div class="needs__solution">
 										<p>
 											Наши преподаватели не только умеют преподавать английский, но и понимают, что такое технический
@@ -298,14 +334,19 @@
 							</div>
 							<div class="needs__item item">
 								<div class="item__img">
-									<img class="item__picture" src="img/employees.jpg" alt="" />
+									<picture>
+										<source type="image/webp" srcset="img/employees.webp" />
+										<img class="item__picture" src="img/employees.jpg" alt="people on work" />
+									</picture>
 								</div>
 								<div class="item__description">
 									<div class="needs__problem">
-										<p>Нужно обучить сотрудников, но мы не хотим говорить о погоде и природе. Нужен бизнес английский.</p>
+										<p>
+											Нужно обучить сотрудников, но мы не хотим говорить о погоде и природе. Нужен бизнес английский.
+										</p>
 									</div>
 									<div class="needs__arrow"></div>
-	
+
 									<div class="needs__solution">
 										<p>
 											Многолетний опыт преподавания бизнес английского для корпоративных клиентов позволяет нам с
@@ -322,29 +363,46 @@
 						<div class="prices__info">
 							<h2 class="prices__title">Цены на обучение английскому языку</h2>
 							<p class="prices__text">
-								В New Challenge Club мы рады предложить вам разные варианты для изучения английского языка по доступным ценам. Все прозрачно - никаких скрытых платежей, кредитов, штрафных санкций! Возможность оплаты по месяцам!  
+								В New Challenge Club мы рады предложить вам разные варианты для изучения английского языка по доступным
+								ценам. Все прозрачно - никаких скрытых платежей, кредитов, штрафных санкций! Возможность оплаты по
+								месяцам!
 							</p>
 						</div>
 						<div class="prices__list">
 							<div class="prices__card card">
 								<a class="card__link" href="#">
 									<div class="card__icon">
-										<img class="card__image" src="img/online.svg" alt="" />
+										<img class="card__image" src="img/online.svg" alt="hat picture" />
 									</div>
 									<h3 class="card__title">Online английский</h3>
 									<p class="card__text">Изучайте английский, не выходя из дома или офиса, в удобное для вас время</p>
 									<div class="card__price"><span>26 </span>р/ак.ч</div>
 									<div class="card__more">
-										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
-										height="30px"
-											viewBox="0 0 490.4 490.4" style="enable-background:new 0 0 490.4 490.4;" xml:space="preserve">
-										<g>
+										<svg
+											version="1.1"
+											id="Capa_1"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											x="0px"
+											y="0px"
+											width="30px"
+											height="30px"
+											viewBox="0 0 490.4 490.4"
+											style="enable-background: new 0 0 490.4 490.4"
+											xml:space="preserve"
+										>
 											<g>
-												<path class="arrow-right" d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5
-													c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"/>
-												<path class="arrow-right" d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9
+												<path
+													class="arrow-right"
+													d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5
+													c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"
+												/>
+												<path
+													class="arrow-right"
+													d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9
 													c4.8-4.8,4.8-12.5,0-17.3l-68.9-68.9c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l48,48H138.7c-6.8,0-12.3,5.5-12.3,12.3
-													C126.4,252.1,131.9,257.5,138.7,257.5z"/>
+													C126.4,252.1,131.9,257.5,138.7,257.5z"
+												/>
 											</g>
 										</svg>
 									</div>
@@ -353,22 +411,37 @@
 							<div class="prices__card card">
 								<a class="card__link" href="group-learning.html">
 									<div class="card__icon">
-										<img class="card__image" src="img/group.svg" alt="" />
+										<img class="card__image" src="img/group.svg" alt="group of people" />
 									</div>
 									<h3 class="card__title">Групповые занятия</h3>
 									<p class="card__text">Небольшие группы по 6-8 человек для взрослых и детей</p>
 									<div class="card__price"><span>136 </span>р/мес</div>
 									<div class="card__more">
-										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
-										height="30px"
-											viewBox="0 0 490.4 490.4" style="enable-background:new 0 0 490.4 490.4;" xml:space="preserve">
-										<g>
+										<svg
+											version="1.1"
+											id="Capa_2"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											x="0px"
+											y="0px"
+											width="30px"
+											height="30px"
+											viewBox="0 0 490.4 490.4"
+											style="enable-background: new 0 0 490.4 490.4"
+											xml:space="preserve"
+										>
 											<g>
-												<path class="arrow-right" d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5
-													c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"/>
-												<path class="arrow-right" d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9
+												<path
+													class="arrow-right"
+													d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5
+													c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"
+												/>
+												<path
+													class="arrow-right"
+													d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9
 													c4.8-4.8,4.8-12.5,0-17.3l-68.9-68.9c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l48,48H138.7c-6.8,0-12.3,5.5-12.3,12.3
-													C126.4,252.1,131.9,257.5,138.7,257.5z"/>
+													C126.4,252.1,131.9,257.5,138.7,257.5z"
+												/>
 											</g>
 										</svg>
 									</div>
@@ -377,22 +450,37 @@
 							<div class="prices__card card">
 								<a class="card__link" href="#">
 									<div class="card__icon">
-										<img class="card__image" src="img/individual.svg" alt="" />
+										<img class="card__image" src="img/individual.svg" alt="teacher" />
 									</div>
-									<h3 class="card__title">Индивидуальные занятия </h3>
+									<h3 class="card__title">Индивидуальные занятия</h3>
 									<p class="card__text">Занятия с репетитором в удобное для вас время</p>
 									<div class="card__price"><span>32 </span>р/ак.ч</div>
 									<div class="card__more">
-										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
-										height="30px"
-											viewBox="0 0 490.4 490.4" style="enable-background:new 0 0 490.4 490.4;" xml:space="preserve">
-										<g>
+										<svg
+											version="1.1"
+											id="Capa_3"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											x="0px"
+											y="0px"
+											width="30px"
+											height="30px"
+											viewBox="0 0 490.4 490.4"
+											style="enable-background: new 0 0 490.4 490.4"
+											xml:space="preserve"
+										>
 											<g>
-												<path class="arrow-right" d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5
-													c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"/>
-												<path class="arrow-right" d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9
+												<path
+													class="arrow-right"
+													d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5
+													c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"
+												/>
+												<path
+													class="arrow-right"
+													d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9
 													c4.8-4.8,4.8-12.5,0-17.3l-68.9-68.9c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l48,48H138.7c-6.8,0-12.3,5.5-12.3,12.3
-													C126.4,252.1,131.9,257.5,138.7,257.5z"/>
+													C126.4,252.1,131.9,257.5,138.7,257.5z"
+												/>
 											</g>
 										</svg>
 									</div>
@@ -401,7 +489,7 @@
 							<div class="prices__card card">
 								<a class="card__link" href="#">
 									<div class="card__icon">
-										<img class="card__image" src="img/corporate.svg" alt="" />
+										<img class="card__image" src="img/corporate.svg" alt="scyscrapers" />
 									</div>
 									<h3 class="card__title">Корпоративный английский</h3>
 									<p class="card__text">Специально разработанные программы для вашего бизнеса</p>
@@ -409,23 +497,40 @@
 									<div class="card__more">
 										<!-- <?xml version="1.0" encoding="iso-8859-1"?> -->
 
-										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
-										height="30px"
-											viewBox="0 0 490.4 490.4" style="enable-background:new 0 0 490.4 490.4;" xml:space="preserve">
-										<g>
+										<svg
+											version="1.1"
+											id="Capa_4"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											x="0px"
+											y="0px"
+											width="30px"
+											height="30px"
+											viewBox="0 0 490.4 490.4"
+											style="enable-background: new 0 0 490.4 490.4"
+											xml:space="preserve"
+										>
 											<g>
-												<path class="arrow-right" d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5
-													c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"/>
-												<path class="arrow-right" d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9
+												<path
+													class="arrow-right"
+													d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5
+													c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"
+												/>
+												<path
+													class="arrow-right"
+													d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9
 													c4.8-4.8,4.8-12.5,0-17.3l-68.9-68.9c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l48,48H138.7c-6.8,0-12.3,5.5-12.3,12.3
-													C126.4,252.1,131.9,257.5,138.7,257.5z"/>
+													C126.4,252.1,131.9,257.5,138.7,257.5z"
+												/>
 											</g>
 										</svg>
 									</div>
 								</a>
 							</div>
 						</div>
-						<p class="prices__additional-info">Более подробную информацию о всех наших ценах можно получить <a href="prices.html"> здесь</a>.</p>
+						<p class="prices__additional-info">
+							Более подробную информацию о всех наших ценах можно получить <a href="prices.html"> здесь</a>.
+						</p>
 					</div>
 				</section>
 				<section class="advantages">
@@ -433,7 +538,6 @@
 						<h2>Почему мы? 8 причин изучать английский язык с нами!</h2>
 						<div class="advantages__list">
 							<ol class="advantages__items">
-								
 								<li class="advantages__item">Бесплатное определение уровня</li>
 								<li class="advantages__item">Настоящий пробный урок бесплатно</li>
 								<li class="advantages__item">Небольшие группы (4-8 человек)</li>
@@ -456,15 +560,17 @@
 									<div class="image-slider__slide">
 										<div class="image-slider__img">
 											<picture>
-												<source srcset="img/group.webp" type="image/webp">
-												<img data-src="img/group.jpg" src="/img/2x2.jpg" alt="" class="swiper-lazy" />
+												<source srcset="img/group.webp" type="image/webp" />
+												<img data-src="img/group.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
 											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
 										<div class="image-slider__text">
 											<h3 class="image-slider__header">Разговорный английский</h3>
-											<p class="image-slider__paragraph">Разные уровни для всех – от начинающих до желающих
-												усовершенствовать свои знания, группы мини и стандарт, онлайн или офлайн</p>
+											<p class="image-slider__paragraph">
+												Разные уровни для всех – от начинающих до желающих усовершенствовать свои знания, группы мини и
+												стандарт, онлайн или офлайн
+											</p>
 										</div>
 										<div class="image-slider__button">
 											<div class="image-slider__ref">Подробнее</div>
@@ -478,15 +584,16 @@
 									<div class="image-slider__slide">
 										<div class="image-slider__img">
 											<picture>
-												<source type="image/webp" srcset="img/kids.webp">
-												<img data-src="img/kids.jpg" src="/img/2x2.jpg" alt="" class="swiper-lazy" />
+												<source type="image/webp" srcset="img/kids.webp" />
+												<img data-src="img/kids.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
 											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
 										<div class="image-slider__text">
 											<h3 class="image-slider__header">Английский для детей и подростков</h3>
-											<p class="image-slider__paragraph">Современные программы для детей от 5 до 16 лет, не
-												скучные преподаватели, не школьная программа</p>
+											<p class="image-slider__paragraph">
+												Современные программы для детей от 5 до 16 лет, не скучные преподаватели, не школьная программа
+											</p>
 										</div>
 										<div class="image-slider__button">
 											<div class="image-slider__ref">Подробнее</div>
@@ -500,10 +607,10 @@
 									<div class="image-slider__slide">
 										<div class="image-slider__img">
 											<picture>
-												<source type="image/webp" srcset="img/corporate.webp">
-												<img data-src="img/corporate.jpg" src="/img/2x2.jpg" alt="" class="swiper-lazy" />
+												<source type="image/webp" srcset="img/corporate.webp" />
+												<img data-src="img/corporate.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
 											</picture>
-											
+
 											<div class="swiper-lazy-preloader"></div>
 										</div>
 										<div class="image-slider__text">
@@ -521,17 +628,16 @@
 								<a href="#" class="swiper-slide__ref">
 									<div class="image-slider__slide">
 										<div class="image-slider__img">
-										<picture>
-											<source type="image/webp" srcset="img/exams.webp">
-											<img data-src="img/exams.jpg" src="/img/2x2.jpg" alt="" class="swiper-lazy" />
-										</picture>
+											<picture>
+												<source type="image/webp" srcset="img/exams.webp" />
+												<img data-src="img/exams.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
+											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
 										<div class="image-slider__text">
 											<h3 class="image-slider__header">Подготовка к экзаменам<br />(ЦТ, IELTS, TOEFL)</h3>
 											<p class="image-slider__paragraph">
-												Опытные преподаватели, индивидуальный подход, успешные примеры
-												сдачи международных экзаменов
+												Опытные преподаватели, индивидуальный подход, успешные примеры сдачи международных экзаменов
 											</p>
 										</div>
 										<div class="image-slider__button">
@@ -546,8 +652,8 @@
 									<div class="image-slider__slide">
 										<div class="image-slider__img">
 											<picture>
-												<source type="image/webp" srcset="img/individual.webp">
-												<img  data-src="img/individual.jpg" src="/img/2x2.jpg" alt="" class="swiper-lazy" />
+												<source type="image/webp" srcset="img/individual.webp" />
+												<img data-src="img/individual.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
 											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
@@ -569,15 +675,16 @@
 									<div class="image-slider__slide">
 										<div class="image-slider__img">
 											<picture>
-												<source type="image/webp" srcset="img/tranings.webp">
-												<img data-src="img/tranings.jpg" src="/img/2x2.jpg" alt="" class="swiper-lazy" />
+												<source type="image/webp" srcset="img/tranings.webp" />
+												<img data-src="img/tranings.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
 											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
 										<div class="image-slider__text">
 											<h3 class="image-slider__header">Тренинги</h3>
-											<p class="image-slider__paragraph">Разнообразные мини-семинары на различные темы, связанные с изучением
-												английского языка</p>
+											<p class="image-slider__paragraph">
+												Разнообразные мини-семинары на различные темы, связанные с изучением английского языка
+											</p>
 										</div>
 										<div class="image-slider__button">
 											<div class="image-slider__ref">Подробнее</div>
@@ -631,14 +738,16 @@
 								<span class="after-education__icon icon-9"> </span>
 								<b class="after-education__title">Успешно сдать экзамены</b>
 								<p class="after-education__text">
-									сдать успешно экзамены ,не только ЦТ, но и международные экзамены (IELTS, TOEFL), которые обеспечат успех в карьере и дальнейшем образовании
+									сдать успешно экзамены ,не только ЦТ, но и международные экзамены (IELTS, TOEFL), которые обеспечат
+									успех в карьере и дальнейшем образовании
 								</p>
 							</li>
 							<li class="after-education__item">
 								<span class="after-education__icon icon-10"></span>
 								<b class="after-education__title">Сделать карьеру</b>
 								<p class="after-education__text">
-									получить престижную работу - не секрет, что владение иностранным языком открывает широкие возможности для карьерного роста и, как результат, хорошего заработка
+									получить престижную работу - не секрет, что владение иностранным языком открывает широкие возможности
+									для карьерного роста и, как результат, хорошего заработка
 								</p>
 							</li>
 						</ul>
@@ -649,7 +758,10 @@
 				<div class="_container">
 					<div class="footer__top">
 						<a class="logo logo--fade" href="index.html">
-							<img class="logo__image" src="img/logo.png" alt="логотип сайта" />
+							<picture>
+								<source type="image/webp" srcset="img/logo.webp" />
+								<img class="logo__image" src="img/logo.png" alt="логотип сайта" />
+							</picture>
 						</a>
 						<div class="socials">
 							<a class="viber" href="viber://chat?number=%2B375339177193" target="_blank" rel="nofollow">
@@ -674,7 +786,7 @@
 									</svg>
 								</span>
 							</a>
-	
+
 							<a class="telegram" href="https://t.me/+375447335127" target="_blank" rel="nofollow">
 								<span>
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px">
@@ -695,6 +807,7 @@
 					</div>
 					<div class="footer__bottom">
 						<section class="footer__column1">
+							<h2 class="visually-hidden">Футер колонка 1</h2>
 							<ul class="footer__list1">
 								<li class="footer__item1">
 									<a href="#popup-free-lesson" class="footer__link1 popup__link">Записаться на пробный урок</a>
@@ -714,6 +827,8 @@
 							</ul>
 						</section>
 						<section class="footer__column2">
+							<h2 class="visually-hidden">Футер колонка 2</h2>
+
 							<ul class="footer__list1">
 								<li class="footer__item1">
 									<a href="index.html" class="footer__link1">Главная</a>
@@ -740,13 +855,12 @@
 			<div class="popup__body">
 				<div class="popup__content">
 					<a href="#header" class="popup__close">
-						<img class="close-popup" src="img/211652_close_icon.svg" alt="">
+						<img class="close-popup" src="img/211652_close_icon.svg" alt="close popup" />
 					</a>
 					<div class="popup__title">Запись на бесплатное тестирование</div>
-					<div class="popup__form form"> 
+					<div class="popup__form form">
 						<div class="form__wrapper">
-
-							<form method="post" action="">
+							<form method="post" action="#">
 								<div class="form__content">
 									<input class="form__email" type="email" name="email" placeholder="E-mail" required />
 									<input class="form__tel" type="tel" name="phone" placeholder="Телефон" required />
@@ -765,13 +879,12 @@
 			<div class="popup__body">
 				<div class="popup__content">
 					<a href="#header" class="popup__close">
-						<img class="close-popup" src="img/211652_close_icon.svg" alt="">
+						<img class="close-popup" src="img/211652_close_icon.svg" alt="close popup" />
 					</a>
 					<div class="popup__title">Запись на бесплатный урок</div>
-					<div class="popup__form form"> 
+					<div class="popup__form form">
 						<div class="form__wrapper">
-
-							<form method="post" action="">
+							<form method="post" action="#">
 								<div class="form__content">
 									<input class="form__email" type="email" name="email" placeholder="E-mail" required />
 									<input class="form__tel" type="tel" name="phone" placeholder="Телефон" required />

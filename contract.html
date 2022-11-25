@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,10 @@
 			<header id="header" class="header lock-padding">
 				<div class="header__top _container">
 					<a class="logo" href="index.html">
-						<img class="logo__image" src="img/logo1.jpg" alt="логотип сайта" />
+						<picture>
+							<source type="image/webp" srcset="img/logo1.webp" />
+							<img class="logo__image" src="img/logo1.jpg" alt="логотип сайта" />
+						</picture>
 					</a>
 					<p class="header__text">Курсы<br />английского<br />языка</p>
 					<a href="#popup-testing" class="header__free-testing-button button-action popup__link"
@@ -27,8 +30,8 @@
 						>запишись на бесплатный пробный урок</a
 					>
 					<div class="header__additional-info">
-						<a class="header__tel" href="tel:+375 33 917-71-93">+375 33 917-71-93 (MTC)</a>
-						<a class="header__tel" href="tel:+375 44 733-51-27">+375 44 733-51-27 (A1)</a>
+						<a class="header__tel" href="tel:+375339177193">+375 33 917-71-93 (MTC)</a>
+						<a class="header__tel" href="tel:+375447335127">+375 44 733-51-27 (A1)</a>
 					</div>
 					<div class="socials">
 						<a class="viber" href="viber://chat?number=%2B375339177193" target="_blank" rel="nofollow">
@@ -133,7 +136,7 @@
 										</svg>
 									</span>
 								</a>
-								<a class="header__tel header__tel--botom" href="tel:+375 33 917-71-93">+375 33 917-71-93 (MTC)</a>
+								<a class="header__tel header__tel--botom" href="tel:+375339177193">+375 33 917-71-93 (MTC)</a>
 								<nav class="menu__body">
 									<ul class="menu__list">
 										<li class="menu__item">
@@ -141,7 +144,7 @@
 										</li>
 										<li class="menu__item">
 											<a data-goto="#courses" class="menu__link" href="#courses">Курсы</a>
-											<spav class="menu__arrow"></spav>
+											<span class="menu__arrow"></span>
 											<ul class="menu__sub-list">
 												<li class="menu__sub-item">
 													<a class="menu__sub-link" href="group-learning.html">Разговорный английский</a>
@@ -474,8 +477,11 @@
 			<footer class="footer">
 				<div class="_container">
 					<div class="footer__top">
-						<a class="logo" href="index.html">
-							<img class="logo__image" src="img/logo.png" alt="логотип сайта" />
+						<a class="logo logo--fade" href="index.html">
+							<picture>
+								<source type="image/webp" srcset="img/logo.webp" />
+								<img class="logo__image" src="img/logo.png" alt="логотип сайта" />
+							</picture>
 						</a>
 						<div class="socials">
 							<a class="viber" href="viber://chat?number=%2B375339177193" target="_blank" rel="nofollow">
@@ -521,39 +527,14 @@
 					</div>
 					<div class="footer__bottom">
 						<section class="footer__column1">
+							<h2 class="visually-hidden">Футер колонка 1</h2>
 							<ul class="footer__list1">
 								<li class="footer__item1">
-									<a href="" class="footer__link1">Записаться на пробный урок</a>
+									<a href="#popup-free-lesson" class="footer__link1 popup__link">Записаться на пробный урок</a>
 								</li>
 								<li class="footer__item1">
 									<a href="contract.html" class="footer__link1">Публичная оферта</a>
 								</li>
-							</ul>
-						</section>
-						<section class="footer__column2">
-							<ul class="footer__list1">
-								<li class="footer__item1">
-									<a href="" class="footer__link1">Главная</a>
-								</li>
-								<li class="footer__item1">
-									<a href="" class="footer__link1">Преподаватели</a>
-								</li>
-								<li class="footer__item1">
-									<a href="" class="footer__link1">Курсы английского</a>
-								</li>
-								<li class="footer__item1">
-									<a href="" class="footer__link1">Стоимость</a>
-								</li>
-								<li class="footer__item1">
-									<a href="" class="footer__link1">Отзывы</a>
-								</li>
-								<li class="footer__item1">
-									<a href="" class="footer__link1">О школе</a>
-								</li>
-							</ul>
-						</section>
-						<section class="footer__column1">
-							<ul class="footer__list1">
 								<li class="footer__item1">
 									<a href="" class="footer__link1">Блог</a>
 								</li>
@@ -562,6 +543,27 @@
 								</li>
 								<li class="footer__item1">
 									<a href="" class="footer__link1">Книги</a>
+								</li>
+							</ul>
+						</section>
+						<section class="footer__column2">
+							<h2 class="visually-hidden">Футер колонка 2</h2>
+
+							<ul class="footer__list1">
+								<li class="footer__item1">
+									<a href="index.html" class="footer__link1">Главная</a>
+								</li>
+								<li class="footer__item1">
+									<a href="" class="footer__link1">Преподаватели</a>
+								</li>
+								<li class="footer__item1">
+									<a href="prices.html" class="footer__link1">Стоимость</a>
+								</li>
+								<li class="footer__item1">
+									<a href="" class="footer__link1">Отзывы</a>
+								</li>
+								<li class="footer__item1">
+									<a href="" class="footer__link1">О школе</a>
 								</li>
 							</ul>
 						</section>
@@ -578,7 +580,7 @@
 					<div class="popup__title">Запись на бесплатное тестирование</div>
 					<div class="popup__form form">
 						<div class="form__wrapper">
-							<form method="post" action="">
+							<form method="post" action="#">
 								<div class="form__content">
 									<input class="form__email" type="email" name="email" placeholder="E-mail" required />
 									<input class="form__tel" type="tel" name="phone" placeholder="Телефон" required />
@@ -602,7 +604,7 @@
 					<div class="popup__title">Запись на бесплатный урок</div>
 					<div class="popup__form form">
 						<div class="form__wrapper">
-							<form method="post" action="">
+							<form method="post" action="#">
 								<div class="form__content">
 									<input class="form__email" type="email" name="email" placeholder="E-mail" required />
 									<input class="form__tel" type="tel" name="phone" placeholder="Телефон" required />

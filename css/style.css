@@ -1944,7 +1944,9 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3rem;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
 }
 @media (max-width: 660px) {
   .group-advantages__wrapper {
@@ -1952,6 +1954,7 @@ strong {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    row-gap: 3rem;
   }
 }
 .group-advantages__left {
@@ -2035,7 +2038,9 @@ strong {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 2rem;
+  }
+  .form__content > *:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 620px) {
@@ -2209,7 +2214,9 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 4rem;
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
 }
 @media (max-width: 800px) {
   .kids-programs__program {
@@ -2224,6 +2231,7 @@ strong {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 6rem;
+    gap: 4rem;
   }
 }
 .kids-programs__program--reversed {
@@ -2268,7 +2276,8 @@ strong {
   .kids-programs__image {
     -ms-flex-item-align: center;
         align-self: center;
-    max-width: 70%;
+    max-width: 90%;
+    margin-bottom: 3rem;
   }
 }
 .kids-programs__image img {
@@ -2305,7 +2314,7 @@ strong {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 .kids-programs__schedule .schedule {
@@ -2344,6 +2353,11 @@ strong {
 .kids-benefits {
   margin-bottom: 4rem;
 }
+@media (max-width: 800px) {
+  .kids-benefits h2 {
+    font-size: 2.4rem;
+  }
+}
 .kids-benefits__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2360,7 +2374,8 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 25%;
+  max-width: 25%;
+  max-height: 35rem;
   padding: 0 3rem;
 }
 @media (max-width: 700px) {
