@@ -25,6 +25,7 @@ a:hover {
 
 h1,
 h2,
+.contacts__title,
 h3,
 h4,
 h5,
@@ -81,7 +82,7 @@ main {
   color: #000;
 }
 
-h2 {
+h2, .contacts__title {
   font-weight: 500;
   text-align: left;
   line-height: 1.2em;
@@ -1726,7 +1727,7 @@ strong {
   margin-top: 49.8px;
   margin-bottom: 34.8px;
 }
-.contract h2 {
+.contract h2, .contract .contacts__title {
   font-size: 2rem;
 }
 .contract h3 {
@@ -2199,12 +2200,12 @@ strong {
   margin-bottom: 5rem;
 }
 @media (max-width: 800px) {
-  .kids__program-wrapper h2 {
+  .kids__program-wrapper h2, .kids__program-wrapper .contacts__title {
     text-align: center;
   }
 }
 @media (max-width: 800px) and (max-width: 700px) {
-  .kids__program-wrapper h2 {
+  .kids__program-wrapper h2, .kids__program-wrapper .contacts__title {
     font-size: 2.4rem;
   }
 }
@@ -2354,7 +2355,7 @@ strong {
   margin-bottom: 4rem;
 }
 @media (max-width: 800px) {
-  .kids-benefits h2 {
+  .kids-benefits h2, .kids-benefits .contacts__title {
     font-size: 2.4rem;
   }
 }
@@ -2408,6 +2409,61 @@ strong {
   top: 0;
   left: -6px;
   background-image: url(../img/kids/kids-check.svg);
+}
+
+.contacts {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+}
+@media (max-width: 700px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.contacts__left {
+  min-width: 45%;
+}
+.contacts__title {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+}
+.contacts__text {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 160%;
+}
+.contacts__info, .contacts__address, .contacts__direction {
+  margin-bottom: 2rem;
+}
+.contacts__right {
+  min-width: 45%;
+}
+@media (max-width: 700px) {
+  .contacts__right {
+    max-width: 100%;
+    min-height: 300px;
+    margin-bottom: 2rem;
+  }
+}
+.contacts__map {
+  min-width: 35%;
+  max-width: 95%;
+  height: 100%;
+  max-height: 800px;
+}
+@media (max-width: 700px) {
+  .contacts__map {
+    min-width: 100%;
+    min-height: 300px;
+  }
 }
 
 .wrapper1 {

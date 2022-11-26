@@ -176,7 +176,7 @@
 											<a class="menu__link" href="contract.html">Публичный договор</a>
 										</li>
 										<li class="menu__item">
-											<a class="menu__link" href="">Контакты</a>
+											<a class="menu__link" href="contacts.html">Контакты</a>
 										</li>
 									</ul>
 								</nav>
@@ -220,16 +220,10 @@
 							</picture>
 							<div class="form__wrapper">
 								<p class="form__text">Запишись на тестирование</p>
-								<form
-									enctype="multipart/form-data"
-									method="post"
-									action="#"
-									id="form"
-									onsubmit="send(event, 'send.php')"
-								>
+								<form action="#" id="form">
 									<div class="form__content">
-										<input class="form__email" type="text" name="email" placeholder="E-mail" required />
-										<input class="form__tel" type="tel" name="tel" placeholder="Телефон" required />
+										<input class="form__email _req _email" type="text" name="email" placeholder="E-mail" required />
+										<input class="form__tel _req" type="tel" name="tel" placeholder="Телефон" required />
 										<input class="form__agree" type="submit" name="submit" value="Записаться" />
 									</div>
 								</form>
@@ -860,7 +854,7 @@
 					<div class="popup__title">Запись на бесплатное тестирование</div>
 					<div class="popup__form form">
 						<div class="form__wrapper">
-							<form method="post" action="#">
+							<form action="#" id="form">
 								<div class="form__content">
 									<input class="form__email" type="email" name="email" placeholder="E-mail" required />
 									<input class="form__tel" type="tel" name="phone" placeholder="Телефон" required />
@@ -884,7 +878,7 @@
 					<div class="popup__title">Запись на бесплатный урок</div>
 					<div class="popup__form form">
 						<div class="form__wrapper">
-							<form method="post" action="#">
+							<form action="#" id="form">
 								<div class="form__content">
 									<input class="form__email" type="email" name="email" placeholder="E-mail" required />
 									<input class="form__tel" type="tel" name="phone" placeholder="Телефон" required />
