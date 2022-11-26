@@ -194,7 +194,7 @@
 		left: 0;
 		background-color: rgb(0, 18, 104);
 		min-width: 90%;
-		width: 250px;
+		width: 270px;
 	}
 
 	// .menu__sub-item
@@ -212,7 +212,7 @@
 	&__sub-link {
 		width: 100%;
 		display: inline-block;
-		padding: 10px 0 10px 20px;
+		padding: 10px 10px 10px 20px;
 		color: #fff;
 		&:hover {
 			background-color: #283a8f;
@@ -409,7 +409,7 @@
 	.menu__sub-list {
 		position: relative;
 		padding: 1rem 1rem 1rem 1rem;
-		background-color: rgb(193, 225, 255);
+		background-color: rgb(226, 230, 229);
 		border-radius: 10px;
 		flex: 1 1 100%;
 		margin-top: 20px;

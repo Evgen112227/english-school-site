@@ -76,6 +76,12 @@
 
 .programms {
 	position: relative;
+	&:before {
+		display: block;
+		content: '';
+		height: 120px;
+		margin: -120px 0 0;
+	}
 }
 
 @media (max-width: 400px) {
