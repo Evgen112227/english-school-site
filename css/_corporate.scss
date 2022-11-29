@@ -75,6 +75,8 @@
 	// .description-corporate__right
 
 	&__right {
+		// margin-top: 2rem;
+		line-height: 140%;
 	}
 }
 
@@ -261,16 +263,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		picture {
-			height: 100%;
-			width: auto;
-		}
 	}
 
 	&__image {
-		height: 100%;
-		width: auto;
-		object-fit: cover;
+		height: 130px;
+		max-width: 100%;
 	}
 
 	&__title {
@@ -339,12 +336,13 @@
 		max-height: 400px;
 		background-image: url('../img/corporate/after.jpg');
 		background-repeat: no-repeat;
-		background-position: 50%;
+		background-position: 50% 30%;
 		margin-bottom: 4rem;
-		@media (max-width: 650px) {
-			background-position: 70%;
+		@media (max-width: 800px) {
+			background-position: 70% 30%;
 		}
-		@media (max-width: 550px) {
+
+		@media (max-width: 600px) {
 			background-image: none;
 		}
 	}
@@ -353,9 +351,9 @@
 
 	&__list {
 		position: absolute;
-		left: 17%;
+		left: 5%;
 		top: 10%;
-		max-width: 400px;
+		max-width: 500px;
 		z-index: 99;
 		@media (max-width: 750px) {
 			left: 2%;
