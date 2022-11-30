@@ -2432,7 +2432,8 @@ strong {
 }
 
 .contacts {
-  margin-top: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
