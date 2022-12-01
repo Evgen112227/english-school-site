@@ -3,7 +3,7 @@
 	&__gallery {
 		display: grid;
 		grid-template-columns: repeat(8, 1fr);
-		grid-template-rows: repeat(4, 6vh);
+		grid-template-rows: repeat(4, 8vh);
 		grid-gap: 10px;
 		margin-bottom: 2rem;
 	}

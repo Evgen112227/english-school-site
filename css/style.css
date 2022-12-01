@@ -1907,6 +1907,11 @@ strong {
       align-self: center;
   justify-self: start;
 }
+@media (max-width: 430px) {
+  .group-studying__text-top {
+    font-size: 1.7rem;
+  }
+}
 
 .group-advantages {
   font-size: 1.8rem;
@@ -2084,7 +2089,7 @@ strong {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-@media (max-width: 760px) {
+@media (max-width: 960px) {
   .group-benefits__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2147,12 +2152,16 @@ strong {
   }
 }
 .group-benefits__right {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  padding-left: 2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
   max-width: 555px;
+  min-width: 400px;
 }
-@media (max-width: 760px) {
+@media (max-width: 960px) {
   .group-benefits__right {
+    padding-left: 0;
+    min-width: 300px;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -2176,7 +2185,7 @@ strong {
 .kids-description__gallery {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 6vh);
+  grid-template-rows: repeat(4, 8vh);
   grid-gap: 10px;
   margin-bottom: 2rem;
 }
