@@ -1,0 +1,147 @@
+.main {
+	margin-top: 13rem;
+}
+
+.children-header {
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 3rem;
+	&__text {
+		font-size: 2rem;
+		line-height: 130%;
+	}
+	// .children-header__title
+	&__title {
+		@extend h2;
+		margin-top: 3rem;
+	}
+
+	// .children-header__picture
+
+	&__picture {
+		max-height: 450px;
+	}
+
+	// .children-header__image
+
+	&__image {
+		max-width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+}
+
+.children-goals {
+	display: flex;
+	column-gap: 6rem;
+	margin-bottom: 5rem;
+	&--reversed {
+		flex-direction: row-reverse;
+		margin-top: 8rem;
+	}
+	h2 {
+		margin-bottom: 3rem;
+		margin-left: 6rem;
+	}
+	// .children-goals__picture
+
+	&__picture {
+		max-width: 30%;
+		&--wide {
+			width: 60%;
+			max-width: 35%;
+		}
+	}
+
+	// .children-goals__image
+
+	&__image {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+	// .children-goals__descr
+
+	&__descr {
+	}
+
+	// .children-goals__list
+
+	&__list {
+		font-size: 2rem;
+		line-height: 130%;
+	}
+
+	// .children-goals__item
+
+	&__item {
+		margin-bottom: 2rem;
+		position: relative;
+		padding-left: 4rem;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: -4px;
+			left: 0px;
+			background-image: url(../img/corporate/check.svg);
+		}
+	}
+}
+
+.children-text {
+	font-size: 2.2rem;
+	line-height: 130%;
+	margin-bottom: 2rem;
+	position: relative;
+	padding-left: 8rem;
+	&:before {
+		position: absolute;
+		content: '';
+		width: 40px;
+		height: 40px;
+		top: 8px;
+		left: 20px;
+		background: url('../img/kids4-6/exclamation-mark.svg') no-repeat center;
+	}
+}
+
+.children-button {
+	display: inline-block;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	&--last {
+		margin-bottom: 4rem;
+	}
+}
+
+.children-play {
+	display: flex;
+	column-gap: 5rem;
+	margin-bottom: 5rem;
+	// .children-play__picture
+
+	&__picture {
+		min-width: 25%;
+	}
+
+	// .children-play__image
+
+	&__image {
+		max-width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+
+	// .children-play__text
+
+	&__text {
+		font-size: 2.1rem;
+		line-height: 130%;
+	}
+}

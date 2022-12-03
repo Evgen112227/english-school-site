@@ -31,6 +31,24 @@ h2 {
 	text-transform: uppercase;
 	font-size: 2.7rem;
 	margin-bottom: 3rem;
+	a {
+		color: inherit;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: #204a66;
+			transition: all 0.3s ease;
+		}
+		&:hover:before {
+			width: 0%;
+			left: 50%;
+		}
+	}
 }
 
 strong {

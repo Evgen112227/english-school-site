@@ -140,21 +140,32 @@
 		margin: 0 auto;
 		margin-bottom: 1rem;
 		outline: 0;
+		&:focus {
+			box-shadow: 0 0 15px #7a956b;
+		}
 		@media (max-width: 800px) {
 			width: 260px;
 		}
 		@media (max-width: 370px) {
 			width: 200px;
 		}
+		&._error {
+			box-shadow: 0 0 15px red;
+		}
 	}
 
 	&__agree {
+		outline: none;
+		cursor: pointer;
 		width: 310px;
 		color: #fff;
 		margin: 0 auto;
 		padding: 1rem;
 		border-radius: 10px;
 		background-color: rgb(255, 90, 102);
+		&:focus {
+			box-shadow: 0 0 15px #7a956b;
+		}
 		@media (max-width: 800px) {
 			width: 260px;
 		}
