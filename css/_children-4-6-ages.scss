@@ -1,5 +1,8 @@
 .main {
 	margin-top: 13rem;
+	@media (max-width: 1020px) {
+		margin-top: 8rem;
+	}
 }
 
 .children-header {

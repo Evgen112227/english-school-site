@@ -19,6 +19,9 @@ main {
 .main {
 	margin-top: 14rem;
 	color: #000;
+	@media (max-width: 1020px) {
+		margin-top: 8rem;
+	}
 }
 
 h2 {
@@ -31,6 +34,12 @@ h2 {
 	text-transform: uppercase;
 	font-size: 2.7rem;
 	margin-bottom: 3rem;
+	@media (max-width: 680px) {
+		font-size: 2.4rem;
+	}
+	@media (max-width: 500px) {
+		font-size: 2rem;
+	}
 	a {
 		color: inherit;
 		position: relative;
