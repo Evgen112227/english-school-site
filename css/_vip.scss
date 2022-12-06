@@ -1,0 +1,128 @@
+.vip-english {
+	color: #000;
+	@media (max-width: 1020px) {
+		padding-top: 8rem;
+	}
+	// .corporate-english__background
+	&__background {
+		max-height: 350px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+}
+h1 {
+	@extend h2;
+	margin-top: 3rem;
+}
+
+.vip-english-description {
+	font-size: 1.9rem;
+	line-height: 130%;
+	margin-bottom: 5rem;
+}
+
+.vip-english-advantages {
+	background-image: linear-gradient(-90deg, #f3ffe5 0%, #f1f4f9 100%);
+	margin-bottom: 6rem;
+	// .vip-english-advantages__list
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .vip-english-advantages__item
+
+	&__item {
+		position: relative;
+		padding-left: 4rem;
+		font-size: 1.7rem;
+		margin-bottom: 2rem;
+		line-height: 130%;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: -4px;
+			left: 0px;
+			background-image: url(../img/corporate/check.svg);
+		}
+	}
+	span {
+		font-weight: 800;
+		font-size: 1.9rem;
+	}
+
+	h2 {
+		padding-top: 2rem;
+	}
+}
+
+.vip-english-groups {
+	margin-bottom: 4rem;
+	// .vip-english-groups__wrapper
+
+	&__wrapper {
+		display: flex;
+		column-gap: 3rem;
+		margin-bottom: 3rem;
+		@media (max-width: 800px) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	// .vip-english-groups__text
+
+	&__text {
+		font-size: 1.9rem;
+		line-height: 145%;
+		a {
+			font-size: 1.8rem;
+			color: #fff;
+			display: inline-block;
+			border-radius: 10px;
+			padding: 3px 10px;
+			background-color: rgb(255, 90, 102);
+		}
+		span {
+			font-weight: 800;
+			font-size: 2rem;
+			text-decoration: underline;
+		}
+	}
+
+	// .vip-english-groups__picture
+
+	&__picture {
+		flex: 0 0 300px;
+		@media (max-width: 800px) {
+			margin-bottom: 3rem;
+			max-width: 550px;
+			flex: none;
+			align-self: center;
+		}
+	}
+
+	&__image {
+		border-radius: 10px;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	// .vip-english-groups__description
+
+	&__description {
+		font-size: 2.2rem;
+		line-height: 130%;
+	}
+}

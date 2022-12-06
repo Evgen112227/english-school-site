@@ -226,11 +226,11 @@
 	pointer-events: all;
 }
 
-/////////////////////ONLY on display wider than 1000px
 @media (min-width: 1021px) {
 	.menu__list {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 	.menu__item {
 		padding: 10px 5px;
