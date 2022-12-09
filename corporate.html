@@ -253,7 +253,10 @@
 									</picture>
 								</div>
 								<div class="card-corporate__more">
-									<a href="#popup-testing" class="header__free-testing-button button-action popup__link"
+									<a
+										href="#popup-testing"
+										class="header__free-testing-button button-action popup__link corporate-btn"
+										data-type="Вкладка 'Общий курс' страницы 'Копроративный английский'"
 										>Отправить заявку</a
 									>
 								</div>
@@ -273,7 +276,10 @@
 									</picture>
 								</div>
 								<div class="card-corporate__more">
-									<a href="#popup-testing" class="header__free-testing-button button-action popup__link"
+									<a
+										href="#popup-testing"
+										class="header__free-testing-button button-action popup__link corporate-btn"
+										data-type="Вкладка 'Бизнес курс' страницы 'Копроративный английский"
 										>Отправить заявку</a
 									>
 								</div>
@@ -293,7 +299,10 @@
 									</picture>
 								</div>
 								<div class="card-corporate__more">
-									<a href="#popup-testing" class="header__free-testing-button button-action popup__link"
+									<a
+										href="#popup-testing"
+										class="header__free-testing-button button-action popup__link corporate-btn"
+										data-type="Вкладка 'Спецкурс' страницы 'Копроративный английский"
 										>Отправить заявку</a
 									>
 								</div>
@@ -313,7 +322,10 @@
 									</picture>
 								</div>
 								<div class="card-corporate__more">
-									<a href="#popup-testing" class="header__free-testing-button button-action popup__link"
+									<a
+										href="#popup-testing"
+										class="header__free-testing-button button-action popup__link corporate-btn"
+										data-type="Вкладка 'Индивидуальные занятия' страницы 'Копроративный английский"
 										>Отправить заявку</a
 									>
 								</div>
@@ -474,11 +486,15 @@
 					</a>
 					<div class="popup__title">Запись на бесплатное тестирование</div>
 					<div class="popup__form form">
-						<div class="form__wrapper">
-							<form action="#" id="form">
+						<div class="form__wrapper spinner">
+							<form
+								action="#"
+								id="form"
+								data-type="Запись на бесплатное тестирование, попап, страница 'Короратиный английский'"
+							>
 								<div class="form__content">
-									<input class="form__email" type="email" name="email" placeholder="E-mail" required />
-									<input class="form__tel" type="tel" name="phone" placeholder="Телефон" required />
+									<input class="form__email _req _name" type="text" name="name" placeholder="Ваше имя" maxlength="40" />
+									<input class="form__tel _req" type="tel" name="tel" placeholder="Телефон" maxlength="20" />
 									<input class="form__agree" type="submit" name="submit" value="Записаться" />
 								</div>
 							</form>
@@ -498,11 +514,15 @@
 					</a>
 					<div class="popup__title">Запись на бесплатный урок</div>
 					<div class="popup__form form">
-						<div class="form__wrapper">
-							<form action="#" id="form">
+						<div class="form__wrapper spinner">
+							<form
+								action="#"
+								id="form"
+								data-type="Запись на бесплатный урок, попап, страница 'Короратиный английский'"
+							>
 								<div class="form__content">
-									<input class="form__email" type="email" name="email" placeholder="E-mail" required />
-									<input class="form__tel" type="tel" name="phone" placeholder="Телефон" required />
+									<input class="form__email _req _name" type="text" name="name" placeholder="Ваше имя" maxlength="40" />
+									<input class="form__tel _req" type="tel" name="tel" placeholder="Телефон" maxlength="20" />
 									<input class="form__agree" type="submit" name="submit" value="Записаться" />
 								</div>
 							</form>
@@ -516,6 +536,6 @@
 		</div>
 		<script src="js/popup.js"></script>
 		<script src="js/ispc.js"></script>
-		<script src="js/mail.js"></script>
+		<script src="js/formSending.js"></script>
 	</body>
 </html>

@@ -260,37 +260,47 @@
 						</div>
 					</div>
 				</section>
-				<p class="individual-text">
+				<div class="individual-text">
 					Цены на индивидуальные занятия в Школе английского языка New Challenge – одни из самых доступных на рынке
 					данных услуг в настоящий момент: <span class="individual-highlight">26 р</span>
 					<span class="individual-highlight2">за 45 минут онлайн занятий!</span>
-					<p class="prices-additional-info">Подробнее информацию о ценах можно получить <a href="prices.html">здесь</a></p>
-				</p>
+					<p class="prices-additional-info">
+						Подробнее информацию о ценах можно получить <a href="prices.html">здесь</a>
+					</p>
+				</div>
 				<section class="individual-benefits">
-					<h2>ПРЕИМУЩЕСТВА ИНДИВИДУАЛЬНЫХ ЗАНЯТИЙ: </h2>
+					<h2>ПРЕИМУЩЕСТВА ИНДИВИДУАЛЬНЫХ ЗАНЯТИЙ:</h2>
 					<div class="individual-section">
 						<div class="individual-section__text">
 							<ul class="individual-section__list">
 								<li class="individual-section__item">
-									Индивидуальный подбор программы, с учетом ваших потребностей и особенностей 								</li>
-								<li class="individual-section__item">
-									Индивидуальный график и длительность занятий
+									Индивидуальный подбор программы, с учетом ваших потребностей и особенностей
 								</li>
-								<li class="individual-section__item">
-									Максимальное внимание преподавателя</li>
-								<li class="individual-section__item">
-									Эффективность усвоения материала
-								</li>
+								<li class="individual-section__item">Индивидуальный график и длительность занятий</li>
+								<li class="individual-section__item">Максимальное внимание преподавателя</li>
+								<li class="individual-section__item">Эффективность усвоения материала</li>
 							</ul>
 						</div>
 						<div class="individual-section__picture">
 							<picture>
 								<source type="image/webp" srcset="img/individ/woman-with-notebook.webp" />
-								<img class="individual-section__image" src="img/individ/woman-with-notebook.jpg" alt="Студент с учителем" />
+								<img
+									class="individual-section__image"
+									src="img/individ/woman-with-notebook.jpg"
+									alt="Студент с учителем"
+								/>
 							</picture>
 						</div>
 					</div>
-					<p class="individual-text">Если вам нужна дополнительная консультация или вы готовы обсудить свои пожелания и условия сотрудничества, <a href="#popup-testing" class="header__free-testing-button button-action popup__link popup-activation-button">оставьте заявку</a> и мы с вами свяжемся в самое ближайшее время. </p>
+					<p class="individual-text">
+						Если вам нужна дополнительная консультация или вы готовы обсудить свои пожелания и условия сотрудничества,
+						<a
+							href="#popup-testing"
+							class="header__free-testing-button button-action popup__link popup-activation-button"
+							>оставьте заявку</a
+						>
+						и мы с вами свяжемся в самое ближайшее время.
+					</p>
 				</section>
 			</main>
 			<footer class="footer">
@@ -398,11 +408,15 @@
 					</a>
 					<div class="popup__title">Запись на бесплатное тестирование</div>
 					<div class="popup__form form">
-						<div class="form__wrapper">
-							<form action="#" id="form">
+						<div class="form__wrapper spinner">
+							<form
+								action="#"
+								id="form"
+								data-type="Запись на бесплатное тестирование, попап, страница 'Индивидуальные занятия'"
+							>
 								<div class="form__content">
-									<input class="form__email _req _email" type="email" name="email" placeholder="E-mail" />
-									<input class="form__tel _req" type="tel" name="phone" placeholder="Телефон" />
+									<input class="form__email _req _name" type="text" name="name" placeholder="Ваше имя" maxlength="40" />
+									<input class="form__tel _req" type="tel" name="tel" placeholder="Телефон" maxlength="20" />
 									<input class="form__agree" type="submit" name="submit" value="Записаться" />
 								</div>
 							</form>
@@ -422,11 +436,15 @@
 					</a>
 					<div class="popup__title">Запись на бесплатный урок</div>
 					<div class="popup__form form">
-						<div class="form__wrapper">
-							<form action="#" id="form">
+						<div class="form__wrapper spinner">
+							<form
+								action="#"
+								id="form"
+								data-type="Запись на бесплатный урок, попап, страница 'Индивидуальные занятия'"
+							>
 								<div class="form__content">
-									<input class="form__email _req _email" type="email" name="email" placeholder="E-mail" />
-									<input class="form__tel _req" type="tel" name="phone" placeholder="Телефон" />
+									<input class="form__email _req _name" type="text" name="name" placeholder="Ваше имя" maxlength="40" />
+									<input class="form__tel _req" type="tel" name="tel" placeholder="Телефон" maxlength="20" />
 									<input class="form__agree" type="submit" name="submit" value="Записаться" />
 								</div>
 							</form>
@@ -440,7 +458,6 @@
 		</div>
 		<script src="js/popup.js"></script>
 		<script src="js/ispc.js"></script>
-		<script src="js/mail.js"></script>
-		<script src="js/deleteAfter.js"></script>
+		<script src="js/formSending.js"></script>
 	</body>
 </html>
