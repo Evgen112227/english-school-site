@@ -26,7 +26,7 @@ if (isMobile.any()) {
 	if (arrows.length) {
 		arrows.forEach((arrow) => {
 			arrow.addEventListener('click', (e) => {
-				document.querySelector('.menu__arrow').classList.toggle('_active');
+				e.target.closest('.menu__item').querySelector('.menu__arrow').classList.toggle('_active');
 				e.target.closest('.menu__item').classList.toggle('_active');
 			});
 		});
@@ -42,6 +42,14 @@ if (iconMenu) {
 		document.body.classList.toggle('_lock');
 		iconMenu.classList.toggle('_active');
 		menuBody.classList.toggle('_active');
+		if (!iconMenu.classList.contains('_active')) {
+			document.querySelectorAll('.menu__arrow').forEach((arrow) => {
+				arrow.classList.remove('_active');
+			});
+			document.querySelectorAll('.menu__item').forEach((item) => {
+				item.classList.remove('_active');
+			});
+		}
 	});
 }
 

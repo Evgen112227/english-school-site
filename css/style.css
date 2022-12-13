@@ -379,7 +379,7 @@ strong {
 }
 .menu__sub-item {
   width: 100%;
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 15px 0px;
 }
 .menu__sub-item:last-child {
   margin-bottom: 0;
