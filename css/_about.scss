@@ -2,12 +2,9 @@
 	font-size: 2rem;
 	color: #000;
 	background-color: #fff;
-	@media (max-width: 1020px) {
-		margin-top: -6rem;
-	}
 	&__wrapper {
 		display: flex;
-		background: url('../img/about3.jpg') center no-repeat;
+		background: url('../img/about4.jpg') 50% 15% no-repeat;
 		@media (max-width: 680px) {
 			flex-direction: column;
 			gap: 2rem;
@@ -16,8 +13,14 @@
 	}
 
 	&__message {
-		text-align: left;
-		padding: 1rem;
+		p {
+			font-size: 1.8rem;
+			margin-bottom: 2rem;
+			line-height: 120%;
+			@media (max-width: 550px) {
+				font-size: 1.6rem;
+			}
+		}
 	}
 
 	&__strong {
@@ -55,8 +58,9 @@
 	}
 
 	&__text {
-		color: #fff;
-		padding: 2rem 2rem 2rem 19rem;
+		color: #000;
+		font-weight: 500;
+		padding: 2rem 2rem 2rem 7rem;
 
 		flex: 1 1 50%;
 		position: relative;
@@ -70,11 +74,9 @@
 		}
 		@media (max-width: 680px) {
 			padding-left: 35%;
-			background: url('../img/about-left2.jpg') 15% 50% no-repeat;
+			background: url('../img/about4.jpg') 15% 50% no-repeat;
 			background-size: cover;
-		}
-		@media (max-width: 500px) {
-			padding-left: 20%;
+			padding: 2rem;
 		}
 	}
 
