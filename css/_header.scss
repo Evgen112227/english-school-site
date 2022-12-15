@@ -95,7 +95,7 @@
 	&--faded {
 		opacity: 0.75;
 	}
-	@media (max-width: 1020px) {
+	@media (max-width: 1040px) {
 		margin-right: 1rem;
 	}
 }
@@ -106,7 +106,7 @@
 	&__bottom {
 		background: $colorMain;
 		box-shadow: 0px 5px 14px -3px rgb(64 64 64 / 84%);
-		@media (max-width: 1020px) {
+		@media (max-width: 1040px) {
 			min-height: 70px;
 		}
 	}
@@ -150,7 +150,7 @@
 		border-right: 5px solid transparent;
 		border-top: 10px solid #fff;
 		position: relative;
-		@media (max-width: 1020px) {
+		@media (max-width: 1040px) {
 			&:before {
 				content: '';
 				position: absolute;
@@ -226,7 +226,7 @@
 	pointer-events: all;
 }
 
-@media (min-width: 1021px) {
+@media (min-width: 1041px) {
 	.menu__list {
 		display: flex;
 		align-items: center;
@@ -256,7 +256,7 @@
 }
 
 ///////////////////////////ONLY on display less than 1000px to display burger icon
-@media (max-width: 1020px) {
+@media (max-width: 1040px) {
 	.header__free-testing-button--bottom,
 	.header__free-lesson-button--bottom {
 		display: block;
@@ -276,7 +276,7 @@
 	}
 
 	.header__tel--botom {
-		@media (max-width: 1020px) {
+		@media (max-width: 1040px) {
 			display: block;
 			position: absolute;
 			font-size: 0;

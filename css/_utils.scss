@@ -16,3 +16,49 @@
 	margin: 0px auto;
 	padding: 0px 1.5rem;
 }
+
+.collapsable {
+	// .collapsable__hidden-content
+	border-radius: 10px;
+	background-color: #f2f3f4;
+	color: #000;
+	cursor: pointer;
+	padding: 1.8rem;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	&--active {
+		background-color: #f5f5dc;
+	}
+	&:hover {
+		background-color: #f5f5dc;
+	}
+}
+
+.collapsable-hidden-content {
+	font-size: 1.7rem;
+	line-height: 130%;
+	padding: 0 2rem;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	background-color: none;
+	p {
+		margin-bottom: 2rem;
+	}
+	ul {
+		padding-left: 4rem;
+		margin-bottom: 2rem;
+		li {
+			margin-bottom: 5px;
+			list-style-type: disc;
+		}
+		@media (max-width: 350px) {
+			padding-left: 2rem;
+		}
+	}
+}
