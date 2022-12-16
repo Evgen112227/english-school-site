@@ -1,0 +1,133 @@
+.elementary-header {
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 3rem;
+	a {
+		text-decoration: underline;
+		color: inherit;
+	}
+	&__text {
+		font-size: 2rem;
+		line-height: 130%;
+		margin-bottom: 3rem;
+		@media (max-width: 500px) {
+			font-size: 1.8rem;
+		}
+		span {
+			font-size: 2.3rem;
+			font-weight: 800;
+			@media (max-width: 600px) {
+				font-size: 2.2rem;
+			}
+			@media (max-width: 400px) {
+				font-size: 2rem;
+			}
+		}
+	}
+	// .children-header__title
+	&__title {
+		@extend h2;
+		margin-top: 3rem;
+	}
+
+	// .children-header__elementarycture
+
+	&__elementarycture {
+		max-height: 650px;
+	}
+
+	// .children-header__image
+
+	&__image {
+		max-width: 100%;
+		height: auto;
+		object-fit: cover;
+		@media (max-width: 500px) {
+			min-height: 100px;
+		}
+	}
+}
+
+.elementary-benefits {
+	@media (max-width: 350px) {
+		margin-top: -3rem;
+	}
+	// .starter-benefits__picture
+	&__picture {
+		position: relative;
+		min-height: 550px;
+		max-height: 550px;
+		background-image: url(../img/beginner/bg-towe.jpg);
+		background-repeat: no-repeat;
+		background-position: 100% 30%;
+		margin-bottom: 4rem;
+		@media (max-width: 950px) {
+			background-image: none;
+			min-height: 450px;
+		}
+		@media (max-width: 500px) {
+			margin-bottom: 7rem;
+		}
+		@media (max-width: 430px) {
+			min-height: 500px;
+			margin-bottom: 10rem;
+		}
+		@media (max-width: 380px) {
+			margin-bottom: 14rem;
+		}
+		@media (max-width: 350px) {
+			min-height: 550px;
+			margin-bottom: 18rem;
+		}
+	}
+
+	// .starter-benefits__list
+
+	&__list {
+		position: absolute;
+		left: 5%;
+		top: 0%;
+		max-width: 500px;
+		@media (max-width: 550px) {
+			left: 0%;
+		}
+		// z-index: 99;
+	}
+
+	// .starter-benefits__item
+
+	&__item {
+		line-height: 130%;
+		position: relative;
+		padding-left: 4rem;
+		font-size: 1.9rem;
+		margin-bottom: 2rem;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: -4px;
+			left: 0px;
+			background-image: url(../img/corporate/check.svg);
+		}
+	}
+}
+
+.elementary-content {
+	padding: 2rem 1rem;
+	margin-bottom: 4rem;
+	background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(198, 243, 202, 1) 0%, rgba(247, 248, 253, 1) 100%);
+	border-radius: 15px;
+	&__text {
+		font-size: 1.8rem;
+		line-height: 135%;
+	}
+}
+
+.elementary-clicable-elements {
+	margin-bottom: 3rem;
+	@media (max-width: 350px) {
+		margin-top: 9rem;
+	}
+}

@@ -25,6 +25,7 @@ a:hover {
 
 h1,
 h2,
+.elementary-header__title,
 .pi-header__title,
 .starter-header__title,
 .individual-header__title,
@@ -93,7 +94,7 @@ main {
   }
 }
 
-h2, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
+h2, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
   font-weight: 500;
   text-align: left;
   line-height: 1.2em;
@@ -105,20 +106,20 @@ h2, .pi-header__title, .starter-header__title, h1, .individual-header__title, .c
   margin-bottom: 3rem;
 }
 @media (max-width: 680px) {
-  h2, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
+  h2, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
     font-size: 2.4rem;
   }
 }
 @media (max-width: 500px) {
-  h2, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
+  h2, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
     font-size: 2rem;
   }
 }
-h2 a, .pi-header__title a, .starter-header__title a, h1 a, .individual-header__title a, .children-header__title a, .corporate-english h1 a, .online-main-header a, .contacts__title a {
+h2 a, .elementary-header__title a, .pi-header__title a, .starter-header__title a, h1 a, .individual-header__title a, .children-header__title a, .corporate-english h1 a, .online-main-header a, .contacts__title a {
   color: inherit;
   position: relative;
 }
-h2 a:before, .pi-header__title a:before, .starter-header__title a:before, h1 a:before, .individual-header__title a:before, .children-header__title a:before, .corporate-english h1 a:before, .online-main-header a:before, .contacts__title a:before {
+h2 a:before, .elementary-header__title a:before, .pi-header__title a:before, .starter-header__title a:before, h1 a:before, .individual-header__title a:before, .children-header__title a:before, .corporate-english h1 a:before, .online-main-header a:before, .contacts__title a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -130,7 +131,7 @@ h2 a:before, .pi-header__title a:before, .starter-header__title a:before, h1 a:b
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-h2 a:hover:before, .pi-header__title a:hover:before, .starter-header__title a:hover:before, h1 a:hover:before, .individual-header__title a:hover:before, .children-header__title a:hover:before, .online-main-header a:hover:before, .contacts__title a:hover:before {
+h2 a:hover:before, .elementary-header__title a:hover:before, .pi-header__title a:hover:before, .starter-header__title a:hover:before, h1 a:hover:before, .individual-header__title a:hover:before, .children-header__title a:hover:before, .online-main-header a:hover:before, .contacts__title a:hover:before {
   width: 0%;
   left: 50%;
 }
@@ -1891,7 +1892,7 @@ strong {
   margin-top: 49.8px;
   margin-bottom: 34.8px;
 }
-.contract h2, .contract .pi-header__title, .contract .starter-header__title, .contract h1, .contract .individual-header__title, .contract .children-header__title, .contract .online-main-header, .contract .contacts__title {
+.contract h2, .contract .elementary-header__title, .contract .pi-header__title, .contract .starter-header__title, .contract h1, .contract .individual-header__title, .contract .children-header__title, .contract .online-main-header, .contract .contacts__title {
   font-size: 2rem;
 }
 .contract h3 {
@@ -2382,12 +2383,12 @@ strong {
   margin-bottom: 5rem;
 }
 @media (max-width: 800px) {
-  .kids__program-wrapper h2, .kids__program-wrapper .pi-header__title, .kids__program-wrapper .starter-header__title, .kids__program-wrapper h1, .kids__program-wrapper .individual-header__title, .kids__program-wrapper .children-header__title, .kids__program-wrapper .online-main-header, .kids__program-wrapper .contacts__title {
+  .kids__program-wrapper h2, .kids__program-wrapper .elementary-header__title, .kids__program-wrapper .pi-header__title, .kids__program-wrapper .starter-header__title, .kids__program-wrapper h1, .kids__program-wrapper .individual-header__title, .kids__program-wrapper .children-header__title, .kids__program-wrapper .online-main-header, .kids__program-wrapper .contacts__title {
     text-align: center;
   }
 }
 @media (max-width: 800px) and (max-width: 700px) {
-  .kids__program-wrapper h2, .kids__program-wrapper .pi-header__title, .kids__program-wrapper .starter-header__title, .kids__program-wrapper h1, .kids__program-wrapper .individual-header__title, .kids__program-wrapper .children-header__title, .kids__program-wrapper .online-main-header, .kids__program-wrapper .contacts__title {
+  .kids__program-wrapper h2, .kids__program-wrapper .elementary-header__title, .kids__program-wrapper .pi-header__title, .kids__program-wrapper .starter-header__title, .kids__program-wrapper h1, .kids__program-wrapper .individual-header__title, .kids__program-wrapper .children-header__title, .kids__program-wrapper .online-main-header, .kids__program-wrapper .contacts__title {
     font-size: 2.4rem;
   }
 }
@@ -2540,7 +2541,7 @@ strong {
   margin-bottom: 4rem;
 }
 @media (max-width: 800px) {
-  .kids-benefits h2, .kids-benefits .pi-header__title, .kids-benefits .starter-header__title, .kids-benefits h1, .kids-benefits .individual-header__title, .kids-benefits .children-header__title, .kids-benefits .online-main-header, .kids-benefits .contacts__title {
+  .kids-benefits h2, .kids-benefits .elementary-header__title, .kids-benefits .pi-header__title, .kids-benefits .starter-header__title, .kids-benefits h1, .kids-benefits .individual-header__title, .kids-benefits .children-header__title, .kids-benefits .online-main-header, .kids-benefits .contacts__title {
     font-size: 2.4rem;
   }
 }
@@ -3377,17 +3378,17 @@ strong {
             align-items: center;
   }
 }
-.children-goals h2, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
+.children-goals h2, .children-goals .elementary-header__title, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
   margin-bottom: 3rem;
   margin-left: 6rem;
 }
 @media (max-width: 960px) {
-  .children-goals h2, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
+  .children-goals h2, .children-goals .elementary-header__title, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
     font-size: 2rem;
   }
 }
 @media (max-width: 730px) {
-  .children-goals h2, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
+  .children-goals h2, .children-goals .elementary-header__title, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
     margin-left: 0;
     text-align: center;
   }
@@ -3807,7 +3808,7 @@ h1 {
   font-weight: 800;
   font-size: 1.9rem;
 }
-.vip-english-advantages h2, .vip-english-advantages .pi-header__title, .vip-english-advantages .starter-header__title, .vip-english-advantages .contacts__title, .vip-english-advantages .online-main-header, .vip-english-advantages .children-header__title, .vip-english-advantages .individual-header__title, .vip-english-advantages h1 {
+.vip-english-advantages h2, .vip-english-advantages .elementary-header__title, .vip-english-advantages .pi-header__title, .vip-english-advantages .starter-header__title, .vip-english-advantages .contacts__title, .vip-english-advantages .online-main-header, .vip-english-advantages .children-header__title, .vip-english-advantages .individual-header__title, .vip-english-advantages h1 {
   padding-top: 2rem;
 }
 
@@ -4272,6 +4273,153 @@ h1 {
 }
 @media (max-width: 350px) {
   .pi-clicable-elements {
+    margin-top: 9rem;
+  }
+}
+
+.elementary-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-bottom: 3rem;
+}
+.elementary-header a {
+  text-decoration: underline;
+  color: inherit;
+}
+.elementary-header__text {
+  font-size: 2rem;
+  line-height: 130%;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .elementary-header__text {
+    font-size: 1.8rem;
+  }
+}
+.elementary-header__text span {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+@media (max-width: 600px) {
+  .elementary-header__text span {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .elementary-header__text span {
+    font-size: 2rem;
+  }
+}
+.elementary-header__title {
+  margin-top: 3rem;
+}
+.elementary-header__elementarycture {
+  max-height: 650px;
+}
+.elementary-header__image {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 500px) {
+  .elementary-header__image {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 350px) {
+  .elementary-benefits {
+    margin-top: -3rem;
+  }
+}
+.elementary-benefits__picture {
+  position: relative;
+  min-height: 550px;
+  max-height: 550px;
+  background-image: url(../img/beginner/bg-towe.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
+  margin-bottom: 4rem;
+}
+@media (max-width: 950px) {
+  .elementary-benefits__picture {
+    background-image: none;
+    min-height: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .elementary-benefits__picture {
+    margin-bottom: 7rem;
+  }
+}
+@media (max-width: 430px) {
+  .elementary-benefits__picture {
+    min-height: 500px;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 380px) {
+  .elementary-benefits__picture {
+    margin-bottom: 14rem;
+  }
+}
+@media (max-width: 350px) {
+  .elementary-benefits__picture {
+    min-height: 550px;
+    margin-bottom: 18rem;
+  }
+}
+.elementary-benefits__list {
+  position: absolute;
+  left: 5%;
+  top: 0%;
+  max-width: 500px;
+}
+@media (max-width: 550px) {
+  .elementary-benefits__list {
+    left: 0%;
+  }
+}
+.elementary-benefits__item {
+  line-height: 130%;
+  position: relative;
+  padding-left: 4rem;
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
+.elementary-benefits__item:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -4px;
+  left: 0px;
+  background-image: url(../img/corporate/check.svg);
+}
+
+.elementary-content {
+  padding: 2rem 1rem;
+  margin-bottom: 4rem;
+  background: -o-linear-gradient(41deg, rgb(2, 0, 36) 0%, rgb(198, 243, 202) 0%, rgb(247, 248, 253) 100%);
+  background: linear-gradient(49deg, rgb(2, 0, 36) 0%, rgb(198, 243, 202) 0%, rgb(247, 248, 253) 100%);
+  border-radius: 15px;
+}
+.elementary-content__text {
+  font-size: 1.8rem;
+  line-height: 135%;
+}
+
+.elementary-clicable-elements {
+  margin-bottom: 3rem;
+}
+@media (max-width: 350px) {
+  .elementary-clicable-elements {
     margin-top: 9rem;
   }
 }
