@@ -19,6 +19,7 @@
 
 .collapsable {
 	// .collapsable__hidden-content
+
 	border-radius: 10px;
 	background-color: #f2f3f4;
 	color: #000;
@@ -36,6 +37,23 @@
 	}
 	&:hover {
 		background-color: #f5f5dc;
+	}
+
+	span {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -35px;
+			background-image: url(../img/beginner/plus-mark.svg);
+		}
+		&.active:before {
+			background-image: url(../img/beginner/minus-mark.svg);
+		}
 	}
 }
 
