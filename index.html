@@ -3,10 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://kit.fontawesome.com/91b68983fc.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<script defer src="https://kit.fontawesome.com/91b68983fc.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
 		<title>Document</title>
 	</head>
 	<body>
@@ -284,27 +291,25 @@
 								</ul>
 							</div>
 							<div class="about__form form">
-								<!-- <picture>
-									<source type="image/webp" srcset="img/form-background.webp" />
-									<img class="about__img" src="img/form-background.jpg" alt="british flag" />
-								</picture> -->
-								<div class="form__wrapper spinner">
+								<div class="form__wrapper spinner form-content">
 									<p class="form__text">Запишись на тестирование</p>
-									<form action="#" id="form" data-type="Запишись на тестирование c главной страницы">
-										<div class="form__content">
-											<input
-												class="form__email _req _name"
-												type="text"
-												name="name"
-												placeholder="Ваше имя"
-												maxlength="40"
-											/>
-											<input class="form__tel _req" type="tel" name="tel" placeholder="Телефон" maxlength="20" />
-											<input class="form__agree" type="submit" name="submit" value="Записаться" />
+									<div class="popup__form">
+										<form action="#" id="form" data-type="Запишись на тестирование c главной страницы">
+											<div class="form__content">
+												<input
+													class="form__email _req _name"
+													type="text"
+													name="name"
+													placeholder="Ваше имя"
+													maxlength="40"
+												/>
+												<input class="form__tel _req" type="tel" name="tel" placeholder="Телефон" maxlength="20" />
+												<input class="form__agree" type="submit" name="submit" value="Записаться" />
+											</div>
+										</form>
+										<div class="form__discount">
+											<p>И получи скидку 5% <br />на первый месяц обучения</p>
 										</div>
-									</form>
-									<div class="form__discount">
-										<p>И получи скидку 5% <br />на первый месяц обучения</p>
 									</div>
 								</div>
 							</div>
@@ -319,7 +324,7 @@
 								<div class="item__img">
 									<picture>
 										<source type="image/webp" srcset="img/headache.webp" />
-										<img class="item__picture" src="img/headache.jpg" alt="headache" />
+										<img loading="lazy" class="item__picture" src="img/headache.jpg" alt="headache" />
 									</picture>
 								</div>
 								<div class="item__description">
@@ -342,7 +347,7 @@
 								<div class="item__img">
 									<picture>
 										<source type="image/webp" srcset="img/barrier2.webp" />
-										<img class="item__picture" src="img/barrier2.jpg" alt="brics wall with man" />
+										<img loading="lazy" class="item__picture" src="img/barrier2.jpg" alt="brics wall with man" />
 									</picture>
 								</div>
 								<div class="item__description">
@@ -363,7 +368,7 @@
 								<div class="item__img">
 									<picture>
 										<source type="image/webp" srcset="img/travel.webp" />
-										<img class="item__picture" src="img/travel.jpg" alt="people with suitcases" />
+										<img loading="lazy" class="item__picture" src="img/travel.jpg" alt="people with suitcases" />
 									</picture>
 								</div>
 								<div class="item__description">
@@ -386,7 +391,7 @@
 								<div class="item__img">
 									<picture>
 										<source type="image/webp" srcset="img/job.webp" />
-										<img class="item__picture" src="img/job.jpg" alt="developer" />
+										<img loading="lazy" class="item__picture" src="img/job.jpg" alt="developer" />
 									</picture>
 								</div>
 								<div class="item__description">
@@ -407,7 +412,7 @@
 								<div class="item__img">
 									<picture>
 										<source type="image/webp" srcset="img/employees.webp" />
-										<img class="item__picture" src="img/employees.jpg" alt="people on work" />
+										<img loading="lazy" class="item__picture" src="img/employees.jpg" alt="people on work" />
 									</picture>
 								</div>
 								<div class="item__description">
@@ -632,7 +637,13 @@
 										<div class="image-slider__img">
 											<picture>
 												<source srcset="img/group.webp" type="image/webp" />
-												<img data-src="img/group.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
+												<img
+													loading="lazy"
+													data-src="img/group.jpg"
+													src="/img/2x2.jpg"
+													alt="2x2 square"
+													class="swiper-lazy"
+												/>
 											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
@@ -656,7 +667,13 @@
 										<div class="image-slider__img">
 											<picture>
 												<source type="image/webp" srcset="img/kids.webp" />
-												<img data-src="img/kids.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
+												<img
+													loading="lazy"
+													data-src="img/kids.jpg"
+													src="/img/2x2.jpg"
+													alt="2x2 square"
+													class="swiper-lazy"
+												/>
 											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
@@ -679,7 +696,13 @@
 										<div class="image-slider__img">
 											<picture>
 												<source type="image/webp" srcset="img/corporate.webp" />
-												<img data-src="img/corporate.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
+												<img
+													loading="lazy"
+													data-src="img/corporate.jpg"
+													src="/img/2x2.jpg"
+													alt="2x2 square"
+													class="swiper-lazy"
+												/>
 											</picture>
 
 											<div class="swiper-lazy-preloader"></div>
@@ -701,7 +724,13 @@
 										<div class="image-slider__img">
 											<picture>
 												<source type="image/webp" srcset="img/exams.webp" />
-												<img data-src="img/exams.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
+												<img
+													loading="lazy"
+													data-src="img/exams.jpg"
+													src="/img/2x2.jpg"
+													alt="2x2 square"
+													class="swiper-lazy"
+												/>
 											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
@@ -724,7 +753,13 @@
 										<div class="image-slider__img">
 											<picture>
 												<source type="image/webp" srcset="img/individual.webp" />
-												<img data-src="img/individual.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
+												<img
+													loading="lazy"
+													data-src="img/individual.jpg"
+													src="/img/2x2.jpg"
+													alt="2x2 square"
+													class="swiper-lazy"
+												/>
 											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
@@ -747,7 +782,13 @@
 										<div class="image-slider__img">
 											<picture>
 												<source type="image/webp" srcset="img/tranings.webp" />
-												<img data-src="img/tranings.jpg" src="/img/2x2.jpg" alt="2x2 square" class="swiper-lazy" />
+												<img
+													loading="lazy"
+													data-src="img/tranings.jpg"
+													src="/img/2x2.jpg"
+													alt="2x2 square"
+													class="swiper-lazy"
+												/>
 											</picture>
 											<div class="swiper-lazy-preloader"></div>
 										</div>
@@ -831,7 +872,7 @@
 						<a class="logo logo--fade" href="index.html">
 							<picture>
 								<source type="image/webp" srcset="img/logo.webp" />
-								<img class="logo__image" src="img/logo.png" alt="логотип сайта" />
+								<img loading="lazy" class="logo__image" src="img/logo.png" alt="логотип сайта" />
 							</picture>
 						</a>
 						<div class="socials">
@@ -924,7 +965,7 @@
 		</div>
 		<div id="popup-testing" class="popup">
 			<div class="popup__body">
-				<div class="popup__content">
+				<div class="popup__content form-content">
 					<a href="#header" class="popup__close">
 						<img class="close-popup" src="img/211652_close_icon.svg" alt="close popup" />
 					</a>
@@ -948,7 +989,7 @@
 		</div>
 		<div id="popup-free-lesson" class="popup">
 			<div class="popup__body">
-				<div class="popup__content">
+				<div class="popup__content form-content">
 					<a href="#header" class="popup__close">
 						<img class="close-popup" src="img/211652_close_icon.svg" alt="close popup" />
 					</a>
@@ -971,9 +1012,9 @@
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/popup.js"></script>
-		<script src="js/ispc.js"></script>
-		<script src="js/formSending.js"></script>
+		<script async src="js/script.js"></script>
+		<script async src="js/popup.js"></script>
+		<script async src="js/ispc.js"></script>
+		<script async src="js/formSending.js"></script>
 	</body>
 </html>

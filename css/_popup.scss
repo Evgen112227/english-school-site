@@ -37,12 +37,15 @@
 	&__content {
 		background-color: #fff;
 		color: #000;
-		max-width: 600px;
+		width: 600px;
 		padding: 4rem;
 		position: relative;
 		opacity: 0;
 		transform: perspective(600px) translate(0px, -100%) rotate(45deg);
 		transition: all 0.8s ease 0s;
+		@media (max-width: 420px) {
+			padding: 2rem;
+		}
 	}
 
 	// .popup__close

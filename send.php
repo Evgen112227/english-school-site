@@ -34,12 +34,12 @@ $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_i
 
 //Выводим сообщение об успешной отправке
     if ($sendToTelegram) {
-        $message = 'Данные отправлены PHP!';
+        $message = 'Спасибо, мы скоро с вами свяжемся!';
     }
 
 //А здесь сообщение об ошибке при отправке
     else {
-        $message = 'Error form PHP';
+        $message = 'Что-то пошло не так, попробуйте позже';
     }
 
     $response = ['message' => $message];

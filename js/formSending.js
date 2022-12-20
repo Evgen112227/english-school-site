@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		buttonCorporateType = '';
 		//Дополняем объект formData доп данными. Сюда будет приходить переменная, определяющая, какой попап был отправлен.
 		formData.set('type', dataAttr);
-		console.log(formData);
 		if (error === 0) {
 			e.target.closest('.spinner').classList.add('_sending');
 			let response = await fetch('send.php', {
@@ -34,12 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 			if (response.ok) {
 				let result = await response.json();
-				alert(result.message);
 				e.target.reset();
 				e.target.closest('.spinner').classList.remove('_sending');
+				showThanksModal(result, e.target);
 			} else {
-				alert('Error from JS');
 				e.target.closest('.spinner').classList.remove('_sending');
+				showThanksModal(result, e.target);
 			}
 		} else {
 			alert('Заполните обязательные поля');
@@ -74,4 +73,20 @@ document.addEventListener('DOMContentLoaded', () => {
 	// function emailTest(input) {
 	// 	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 	// }
+
+	function showThanksModal(response, target) {
+		const prevModalDialog = target.closest('.popup__form') || target.closest('.group-form__wrapper');
+		prevModalDialog.style.display = 'none';
+		const thanksModal = document.createElement('div');
+		thanksModal.innerHTML = `
+			<div style="text-align:center; font-size: 3rem">
+				<p>${response.message}</p>
+			</div>
+		`;
+		target.closest('.form-content').append(thanksModal);
+		setTimeout(() => {
+			thanksModal.remove();
+			prevModalDialog.style.display = 'block';
+		}, 5000);
+	}
 });
