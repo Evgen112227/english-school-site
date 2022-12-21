@@ -3883,6 +3883,11 @@ h1 {
           flex-direction: column-reverse;
   margin-bottom: 3rem;
 }
+@media (max-width: 550px) {
+  .it-header h2, .it-header .elementary-header__title, .it-header .pi-header__title, .it-header .starter-header__title, .it-header .contacts__title, .it-header .online-main-header, .it-header .children-header__title, .it-header .individual-header__title, .it-header h1 {
+    text-align: center;
+  }
+}
 .it-header__text {
   font-size: 2rem;
   line-height: 130%;
