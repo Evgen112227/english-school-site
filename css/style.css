@@ -25,6 +25,7 @@ a:hover {
 
 h1,
 h2,
+.intermediate-header__title,
 .elementary-header__title,
 .pi-header__title,
 .starter-header__title,
@@ -94,7 +95,7 @@ main {
   }
 }
 
-h2, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
+h2, .intermediate-header__title, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
   font-weight: 500;
   text-align: left;
   line-height: 1.2em;
@@ -106,20 +107,20 @@ h2, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .i
   margin-bottom: 3rem;
 }
 @media (max-width: 680px) {
-  h2, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
+  h2, .intermediate-header__title, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
     font-size: 2.4rem;
   }
 }
 @media (max-width: 500px) {
-  h2, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
+  h2, .intermediate-header__title, .elementary-header__title, .pi-header__title, .starter-header__title, h1, .individual-header__title, .children-header__title, .corporate-english h1, .online-main-header, .contacts__title {
     font-size: 2rem;
   }
 }
-h2 a, .elementary-header__title a, .pi-header__title a, .starter-header__title a, h1 a, .individual-header__title a, .children-header__title a, .corporate-english h1 a, .online-main-header a, .contacts__title a {
+h2 a, .intermediate-header__title a, .elementary-header__title a, .pi-header__title a, .starter-header__title a, h1 a, .individual-header__title a, .children-header__title a, .corporate-english h1 a, .online-main-header a, .contacts__title a {
   color: inherit;
   position: relative;
 }
-h2 a:before, .elementary-header__title a:before, .pi-header__title a:before, .starter-header__title a:before, h1 a:before, .individual-header__title a:before, .children-header__title a:before, .corporate-english h1 a:before, .online-main-header a:before, .contacts__title a:before {
+h2 a:before, .intermediate-header__title a:before, .elementary-header__title a:before, .pi-header__title a:before, .starter-header__title a:before, h1 a:before, .individual-header__title a:before, .children-header__title a:before, .corporate-english h1 a:before, .online-main-header a:before, .contacts__title a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -131,7 +132,7 @@ h2 a:before, .elementary-header__title a:before, .pi-header__title a:before, .st
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-h2 a:hover:before, .elementary-header__title a:hover:before, .pi-header__title a:hover:before, .starter-header__title a:hover:before, h1 a:hover:before, .individual-header__title a:hover:before, .children-header__title a:hover:before, .online-main-header a:hover:before, .contacts__title a:hover:before {
+h2 a:hover:before, .intermediate-header__title a:hover:before, .elementary-header__title a:hover:before, .pi-header__title a:hover:before, .starter-header__title a:hover:before, h1 a:hover:before, .individual-header__title a:hover:before, .children-header__title a:hover:before, .online-main-header a:hover:before, .contacts__title a:hover:before {
   width: 0%;
   left: 50%;
 }
@@ -1883,7 +1884,7 @@ strong {
   margin-top: 49.8px;
   margin-bottom: 34.8px;
 }
-.contract h2, .contract .elementary-header__title, .contract .pi-header__title, .contract .starter-header__title, .contract h1, .contract .individual-header__title, .contract .children-header__title, .contract .online-main-header, .contract .contacts__title {
+.contract h2, .contract .intermediate-header__title, .contract .elementary-header__title, .contract .pi-header__title, .contract .starter-header__title, .contract h1, .contract .individual-header__title, .contract .children-header__title, .contract .online-main-header, .contract .contacts__title {
   font-size: 2rem;
 }
 .contract h3 {
@@ -2379,12 +2380,12 @@ strong {
   margin-bottom: 5rem;
 }
 @media (max-width: 800px) {
-  .kids__program-wrapper h2, .kids__program-wrapper .elementary-header__title, .kids__program-wrapper .pi-header__title, .kids__program-wrapper .starter-header__title, .kids__program-wrapper h1, .kids__program-wrapper .individual-header__title, .kids__program-wrapper .children-header__title, .kids__program-wrapper .online-main-header, .kids__program-wrapper .contacts__title {
+  .kids__program-wrapper h2, .kids__program-wrapper .intermediate-header__title, .kids__program-wrapper .elementary-header__title, .kids__program-wrapper .pi-header__title, .kids__program-wrapper .starter-header__title, .kids__program-wrapper h1, .kids__program-wrapper .individual-header__title, .kids__program-wrapper .children-header__title, .kids__program-wrapper .online-main-header, .kids__program-wrapper .contacts__title {
     text-align: center;
   }
 }
 @media (max-width: 800px) and (max-width: 700px) {
-  .kids__program-wrapper h2, .kids__program-wrapper .elementary-header__title, .kids__program-wrapper .pi-header__title, .kids__program-wrapper .starter-header__title, .kids__program-wrapper h1, .kids__program-wrapper .individual-header__title, .kids__program-wrapper .children-header__title, .kids__program-wrapper .online-main-header, .kids__program-wrapper .contacts__title {
+  .kids__program-wrapper h2, .kids__program-wrapper .intermediate-header__title, .kids__program-wrapper .elementary-header__title, .kids__program-wrapper .pi-header__title, .kids__program-wrapper .starter-header__title, .kids__program-wrapper h1, .kids__program-wrapper .individual-header__title, .kids__program-wrapper .children-header__title, .kids__program-wrapper .online-main-header, .kids__program-wrapper .contacts__title {
     font-size: 2.4rem;
   }
 }
@@ -2537,7 +2538,7 @@ strong {
   margin-bottom: 4rem;
 }
 @media (max-width: 800px) {
-  .kids-benefits h2, .kids-benefits .elementary-header__title, .kids-benefits .pi-header__title, .kids-benefits .starter-header__title, .kids-benefits h1, .kids-benefits .individual-header__title, .kids-benefits .children-header__title, .kids-benefits .online-main-header, .kids-benefits .contacts__title {
+  .kids-benefits h2, .kids-benefits .intermediate-header__title, .kids-benefits .elementary-header__title, .kids-benefits .pi-header__title, .kids-benefits .starter-header__title, .kids-benefits h1, .kids-benefits .individual-header__title, .kids-benefits .children-header__title, .kids-benefits .online-main-header, .kids-benefits .contacts__title {
     font-size: 2.4rem;
   }
 }
@@ -3374,17 +3375,17 @@ strong {
             align-items: center;
   }
 }
-.children-goals h2, .children-goals .elementary-header__title, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
+.children-goals h2, .children-goals .intermediate-header__title, .children-goals .elementary-header__title, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
   margin-bottom: 3rem;
   margin-left: 6rem;
 }
 @media (max-width: 960px) {
-  .children-goals h2, .children-goals .elementary-header__title, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
+  .children-goals h2, .children-goals .intermediate-header__title, .children-goals .elementary-header__title, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
     font-size: 2rem;
   }
 }
 @media (max-width: 730px) {
-  .children-goals h2, .children-goals .elementary-header__title, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
+  .children-goals h2, .children-goals .intermediate-header__title, .children-goals .elementary-header__title, .children-goals .pi-header__title, .children-goals .starter-header__title, .children-goals h1, .children-goals .individual-header__title, .children-goals .contacts__title, .children-goals .online-main-header, .children-goals .children-header__title {
     margin-left: 0;
     text-align: center;
   }
@@ -3804,7 +3805,7 @@ h1 {
   font-weight: 800;
   font-size: 1.9rem;
 }
-.vip-english-advantages h2, .vip-english-advantages .elementary-header__title, .vip-english-advantages .pi-header__title, .vip-english-advantages .starter-header__title, .vip-english-advantages .contacts__title, .vip-english-advantages .online-main-header, .vip-english-advantages .children-header__title, .vip-english-advantages .individual-header__title, .vip-english-advantages h1 {
+.vip-english-advantages h2, .vip-english-advantages .intermediate-header__title, .vip-english-advantages .elementary-header__title, .vip-english-advantages .pi-header__title, .vip-english-advantages .starter-header__title, .vip-english-advantages .contacts__title, .vip-english-advantages .online-main-header, .vip-english-advantages .children-header__title, .vip-english-advantages .individual-header__title, .vip-english-advantages h1 {
   padding-top: 2rem;
 }
 
@@ -3884,7 +3885,7 @@ h1 {
   margin-bottom: 3rem;
 }
 @media (max-width: 550px) {
-  .it-header h2, .it-header .elementary-header__title, .it-header .pi-header__title, .it-header .starter-header__title, .it-header .contacts__title, .it-header .online-main-header, .it-header .children-header__title, .it-header .individual-header__title, .it-header h1 {
+  .it-header h2, .it-header .intermediate-header__title, .it-header .elementary-header__title, .it-header .pi-header__title, .it-header .starter-header__title, .it-header .contacts__title, .it-header .online-main-header, .it-header .children-header__title, .it-header .individual-header__title, .it-header h1 {
     text-align: center;
   }
 }
@@ -4392,6 +4393,162 @@ h1 {
 }
 @media (max-width: 350px) {
   .elementary-clicable-elements {
+    margin-top: 9rem;
+  }
+}
+
+.intermediate-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-bottom: 3rem;
+}
+.intermediate-header__text {
+  font-size: 2rem;
+  line-height: 130%;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .intermediate-header__text {
+    font-size: 1.8rem;
+  }
+}
+.intermediate-header__text span {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+@media (max-width: 600px) {
+  .intermediate-header__text span {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .intermediate-header__text span {
+    font-size: 2rem;
+  }
+}
+.intermediate-header__title {
+  margin-top: 3rem;
+}
+.intermediate-header__picture {
+  max-height: 650px;
+}
+.intermediate-header__image {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 500px) {
+  .intermediate-header__image {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 350px) {
+  .intermediate-benefits {
+    margin-top: -3rem;
+  }
+}
+.intermediate-benefits__picture {
+  position: relative;
+  min-height: 600px;
+  max-height: 600px;
+  background-image: url(../img/intermediate/bg-gray.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
+  margin-bottom: 4rem;
+}
+@media (max-width: 500px) {
+  .intermediate-benefits__picture {
+    margin-bottom: 7rem;
+  }
+}
+@media (max-width: 450px) {
+  .intermediate-benefits__picture {
+    background-image: none;
+    margin-bottom: 0rem;
+  }
+}
+@media (max-width: 430px) {
+  .intermediate-benefits__picture {
+    min-height: 500px;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 380px) {
+  .intermediate-benefits__picture {
+    margin-bottom: 14rem;
+  }
+}
+@media (max-width: 350px) {
+  .intermediate-benefits__picture {
+    min-height: 550px;
+  }
+}
+.intermediate-benefits__list {
+  position: absolute;
+  left: 5%;
+  top: 4%;
+  max-width: 500px;
+}
+@media (max-width: 550px) {
+  .intermediate-benefits__list {
+    left: 1%;
+  }
+}
+.intermediate-benefits__item {
+  line-height: 130%;
+  position: relative;
+  padding-left: 4rem;
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
+.intermediate-benefits__item:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -4px;
+  left: 0px;
+  background-image: url(../img/corporate/check.svg);
+}
+@media (max-width: 620px) {
+  .intermediate-benefits__item {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .intermediate-benefits__item {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 450px) {
+  .intermediate-benefits__item {
+    font-size: 1.6rem;
+  }
+}
+
+.intermediate-content {
+  padding: 2rem 1rem;
+  margin-bottom: 4rem;
+  background-color: #f2f3f4;
+  border-radius: 15px;
+}
+.intermediate-content__text {
+  font-size: 1.8rem;
+  line-height: 135%;
+}
+
+.intermediate-clicable-elements {
+  margin-bottom: 3rem;
+}
+@media (max-width: 350px) {
+  .intermediate-clicable-elements {
     margin-top: 9rem;
   }
 }
