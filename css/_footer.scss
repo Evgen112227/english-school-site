@@ -1,6 +1,7 @@
 .footer {
 	padding: 2rem;
-	background-color: $colorMain;
+	background-color: rgb(2 46 92);
+
 	&__top {
 		display: flex;
 		justify-content: space-between;
@@ -13,6 +14,9 @@
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
+		& > * {
+			margin-bottom: 2rem;
+		}
 	}
 
 	// .footer__column1

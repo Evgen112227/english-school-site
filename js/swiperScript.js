@@ -15,14 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			disabledOnInteraction: true,
 		},
 		speed: 1200,
-		// direction: 'vertical',
-		// effect: 'cube',
-		// cubeEffect: {
-		// 	slideShadows: true,
-		// 	shadow: true,
-		// 	shadowOffset: 20,
-		// 	shadowScale: 0.94,
-		// },
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
@@ -50,5 +42,3 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	});
 });
-
-///////////////////////// Отправка данных на сервер////////////////////////////////

@@ -35,10 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
 				let result = await response.json();
 				e.target.reset();
 				e.target.closest('.spinner').classList.remove('_sending');
-				showThanksModal(result, e.target);
+				showThanksModal(result.message, e.target);
 			} else {
 				e.target.closest('.spinner').classList.remove('_sending');
-				showThanksModal(result, e.target);
+				showThanksModal('Что-то пошло не так', e.target);
 			}
 		} else {
 			alert('Заполните обязательные поля');
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const thanksModal = document.createElement('div');
 		thanksModal.innerHTML = `
 			<div style="text-align:center; font-size: 3rem">
-				<p>${response.message}</p>
+				<p>${response}</p>
 			</div>
 		`;
 		target.closest('.form-content').append(thanksModal);

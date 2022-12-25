@@ -1834,7 +1834,7 @@ strong {
 
 .footer {
   padding: 2rem;
-  background-color: rgb(0, 18, 104);
+  background-color: rgb(2, 46, 92);
 }
 .footer__top {
   display: -webkit-box;
@@ -1857,6 +1857,9 @@ strong {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.footer__bottom > * {
+  margin-bottom: 2rem;
 }
 .footer section {
   margin-right: 3rem;
